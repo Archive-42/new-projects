@@ -1,0 +1,36 @@
+<header class="header">
+  <h1 class="header-title">
+    <a href="/">multi-index-hits</a>
+  </h1>
+  <p class="header-subtitle">
+    using
+    <a href="https://github.com/algolia/angular-instantsearch">
+      Angular InstantSearch
+    </a>
+  </p>
+</header>
+
+<div class="container">
+  <ais-instantsearch [config]="config">
+    <div class="search-panel">
+      <div class="search-panel__results">
+
+        <div class="searchbox">
+          <ais-search-box placeholder=""></ais-search-box>
+        </div>
+
+        <div style="display: flex; ">
+          <ais-index indexName="actors">
+            <h2>Actors</h2>
+            <ais-hits></ais-hits>
+          </ais-index>
+          <ais-index indexName="players">
+            <h2>Players</h2>
+            <ais-hits></ais-hits>
+          </ais-index>
+        </div>
+      </div>
+
+    </div>
+  </ais-instantsearch>
+</div>

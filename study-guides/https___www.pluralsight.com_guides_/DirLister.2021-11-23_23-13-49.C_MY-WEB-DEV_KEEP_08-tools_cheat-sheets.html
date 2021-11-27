@@ -1,0 +1,232 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>DirLister&nbsp;11/23/2021 11:13:49 PM -05:00</title>
+  <meta name="generator" content="DirLister v2" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+BQMBvwAAAD4AAAAAAAAAAAUDAb8FAwG/BQMBvwUDAb8FAwG/BQMBvwUDAb8FAwG/BQMBvwAAAAAAAAAABQMBvwMCAf8FAwG/AAAAAAAAAAADAgH/AwIB/wMCAf8DAgH/AwIB/wMCAf8DAgH/AwIB/wMCAf8AAAAAAAAAAAAAAD4FAwG/AAAAPgAAAAAAAAAAAAAAPgAAAD4AAAA+AAAAPgAAAD4AAAA+AAAAPgAAAD4AAAA+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD4FAwG/AAAAPgAAAAAAAAAABQMBvwUDAb8FAwG/BQMBvwUDAb8FAwG/BQMBvwUDAb8FAwG/AAAAAAAAAAAFAwG/AwIB/wUDAb8AAAAAAAAAAAMCAf8DAgH/AwIB/wMCAf8DAgH/AwIB/wMCAf8DAgH/AwIB/wAAAAAAAAAAAAAAPgUDAb8AAAA+AAAAAAAAAAAAAAA+AAAAPgAAAD4AAAA+AAAAPgAAAD4AAAA+AAAAPgAAAD4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPgUDAb8AAAA+AAAAAAAAAAAFAwG/BQMBvwUDAb8FAwG/BQMBvwUDAb8FAwG/BQMBvwUDAb8AAAAAAAAAAAUDAb8DAgH/BQMBvwAAAAAAAAAAAwIB/wMCAf8DAgH/AwIB/wMCAf8DAgH/AwIB/wMCAf8DAgH/AAAAAAAAAAAAAAA+BQMBvwAAAD4AAAAAAAAAAAAAAD4AAAA+AAAAPgAAAD4AAAA+AAAAPgAAAD4AAAA+AAAAPgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAP//AADcAQAAjAEAAN//AAD//wAA//8AANwBAACMAQAA3/8AAP//AAD//wAA3AEAAIwBAADf/wAA//8AAA==" />
+<style>
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	hyphens: auto;
+	margin-top: 0;
+	outline: none !important;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+}
+
+html { background: black; }
+
+header { margin-bottom: 1em; }
+
+body {
+	background-color: rgb(255, 253, 247);
+	box-shadow: 6px 0 4px orange;
+	margin: 0 auto;
+	max-width: 95%;
+	padding: 2em;
+	width: 80%;
+}
+
+@media only screen and (max-width: 1080px) {
+	body {
+		box-shadow: none;
+		font-size-adjust: 80;
+		max-width: 100%;
+		padding: 0.3em;
+		width: 100%;
+	}
+
+	section { padding: 0.1em; }
+
+	ul { margin-left: -3em; }
+}
+
+
+@media print {
+	* { background-color: #fff !important; }
+
+	body {
+		box-shadow: none !important;
+		max-width: 100% !important;
+		padding: 0.3em !important;
+		width: 100% !important;
+	}
+
+	a:after { content: "( " attr(href) " )" !important; }
+
+	section { padding: 0.1em !important; }
+
+	aside { display: none !important; }
+
+	ul { margin-left: -3em !important; }
+}
+
+
+h2 {
+	color: #8B5A00;
+	font: 1.6em Helvetica, Verdana, sans-serif;
+}
+
+aside {
+	display: block;
+	float: right;
+}
+
+aside a, a:visited {
+	color: orangered;
+	font-family: monospace;
+	font-size: 95%;
+	text-decoration: none;
+}
+
+details {
+	margin: 0;
+	padding: 0;
+}
+
+
+summary {
+	box-shadow: 3px 3px 4px silver;
+	color: orange;
+	font: 1.2em Helvetica, Verdana, sans-serif;
+	margin-bottom: 0.2em;
+	padding: 0.1em;
+}
+
+li {
+	padding: 2px;
+	user-select: all;
+}
+
+li > span, summary > span {
+	color: gray;
+	font-family: consolas;
+	font-size: 80%;
+	margin-left: 1em;
+}
+
+ul {
+	font: 0.9em Helvetica, Verdana, sans-serif;
+	list-style-type: none;
+}
+
+li:hover {
+	background: #f6f6f6;
+	box-shadow: 1px 1px 2px silver;
+}
+
+section { padding: 0.6em; }
+
+
+footer {
+	background-color: #800000;
+	bottom: 0;
+	clear: both;
+	color: #ff4;
+	display: inline-block;
+	font-size: 0.7em;
+	left: 0;
+	margin: 0 auto;
+	padding: 3px;
+	position: fixed;
+	text-align: center;
+	width: 99.5%;
+}
+
+
+footer a, footer a:visited {
+	color: #ff4;
+	text-decoration: none;
+}
+</style>
+</head>
+<body>
+<aside>
+<a href="javascript:void(0)" onclick="var els = document.getElementsByTagName('details');for (var i=0; i < els.length; i++) { els[i].setAttribute('open', 'open');}">open all</a>&nbsp;|&nbsp;<a href="javascript:void(0)" onclick="var els = document.getElementsByTagName('details');for (var i=0; i < els.length; i++) { els[i].removeAttribute('open');}">collapse all</a>
+</aside>
+<header>
+<h2>Directory listing by DirLister, 2021-11-23 23:13:49</h2>
+<ul>
+<li>C:\MY-WEB-DEV\KEEP\08-tools\cheat-sheets\ <span>files: 31, size: 4.71MB</span></li>
+</ul>
+</header>
+<footer><a href="https://github.com/SanderSade/DirLister/"><strong>DirLister v2</strong>&nbsp;|&nbsp;Source, updates & support</a></footer>
+<section>
+<details open="">
+<summary>C:\MY-WEB-DEV\KEEP\08-tools\cheat-sheets\_design\<span>files: 2&nbsp;(4.49MB)</span></summary>
+<ul>
+<li>Awesome Cheatsheets.sketch<span>4.44MB&nbsp;|&nbsp;created: 2021-02-10 07:08:03, modified: 2021-02-05 12:30:30</span></li>
+<li>cover_github@2x.png<span>41.5KB&nbsp;|&nbsp;created: 2021-02-10 07:08:03, modified: 2021-02-05 12:30:30&nbsp;|&nbsp;Image 400x1800, bpp: 32</span></li>
+</ul>
+</details>
+</section>
+<section>
+<details open="">
+<summary>C:\MY-WEB-DEV\KEEP\08-tools\cheat-sheets\backend\<span>files: 2&nbsp;(39.84KB)</span></summary>
+<ul>
+<li>django.py<span>6.83KB&nbsp;|&nbsp;created: 2021-02-10 07:07:57, modified: 2021-02-05 12:30:30</span></li>
+<li>laravel.php<span>33.01KB&nbsp;|&nbsp;created: 2021-02-10 07:07:58, modified: 2021-02-05 12:30:30</span></li>
+</ul>
+</details>
+</section>
+<section>
+<details open="">
+<summary>C:\MY-WEB-DEV\KEEP\08-tools\cheat-sheets\databases\<span>files: 2&nbsp;(9.14KB)</span></summary>
+<ul>
+<li>mysql.sh<span>555B&nbsp;|&nbsp;created: 2021-02-10 07:07:58, modified: 2021-02-05 12:30:30</span></li>
+<li>redis.sh<span>8.6KB&nbsp;|&nbsp;created: 2021-02-10 07:07:58, modified: 2021-02-05 12:30:30</span></li>
+</ul>
+</details>
+</section>
+<section>
+<details open="">
+<summary>C:\MY-WEB-DEV\KEEP\08-tools\cheat-sheets\frontend\<span>files: 1&nbsp;(13.7KB)</span></summary>
+<ul>
+<li>html5.html<span>13.7KB&nbsp;|&nbsp;created: 2021-02-10 07:07:59, modified: 2021-02-05 12:30:30</span></li>
+</ul>
+</details>
+</section>
+<section>
+<details open="">
+<summary>C:\MY-WEB-DEV\KEEP\08-tools\cheat-sheets\languages\<span>files: 6&nbsp;(72.23KB)</span></summary>
+<ul>
+<li>bash.sh<span>23.19KB&nbsp;|&nbsp;created: 2021-02-10 07:07:59, modified: 2021-02-05 12:30:30</span></li>
+<li>C.txt<span>8.55KB&nbsp;|&nbsp;created: 2021-02-10 07:07:59, modified: 2021-02-05 12:30:30</span></li>
+<li>java.md<span>16.03KB&nbsp;|&nbsp;created: 2021-02-10 07:07:59, modified: 2021-02-05 12:30:30</span></li>
+<li>php.php<span>12.04KB&nbsp;|&nbsp;created: 2021-02-10 07:08:00, modified: 2021-02-05 12:30:30</span></li>
+<li>python.md<span>10.22KB&nbsp;|&nbsp;created: 2021-02-10 07:08:00, modified: 2021-02-05 12:30:30</span></li>
+<li>XML.md<span>2.2KB&nbsp;|&nbsp;created: 2021-02-10 07:08:00, modified: 2021-02-05 12:30:30</span></li>
+</ul>
+</details>
+</section>
+<section>
+<details open="">
+<summary>C:\MY-WEB-DEV\KEEP\08-tools\cheat-sheets\tools\<span>files: 18&nbsp;(98.57KB)</span></summary>
+<ul>
+<li>aws.sh<span>2.54KB&nbsp;|&nbsp;created: 2021-02-10 07:08:00, modified: 2021-02-05 12:30:30</span></li>
+<li>curl.sh<span>6.19KB&nbsp;|&nbsp;created: 2021-02-10 07:08:00, modified: 2021-02-05 12:30:30</span></li>
+<li>docker.sh<span>6.07KB&nbsp;|&nbsp;created: 2021-02-10 07:08:00, modified: 2021-02-05 12:30:30</span></li>
+<li>drush.sh<span>2.7KB&nbsp;|&nbsp;created: 2021-02-10 07:08:00, modified: 2021-02-05 12:30:30</span></li>
+<li>emmet.md<span>4.86KB&nbsp;|&nbsp;created: 2021-02-10 07:08:00, modified: 2021-02-05 12:30:30</span></li>
+<li>gcp.md<span>5.37KB&nbsp;|&nbsp;created: 2021-02-10 07:08:00, modified: 2021-02-05 12:30:30</span></li>
+<li>git.sh<span>6.21KB&nbsp;|&nbsp;created: 2021-02-10 07:08:00, modified: 2021-02-05 12:30:30</span></li>
+<li>heroku.sh<span>4.45KB&nbsp;|&nbsp;created: 2021-02-10 07:08:00, modified: 2021-02-05 12:30:30</span></li>
+<li>kubernetes.md<span>3.19KB&nbsp;|&nbsp;created: 2021-02-10 07:08:01, modified: 2021-02-05 12:30:30</span></li>
+<li>nanobox_boxfile.yml<span>5.84KB&nbsp;|&nbsp;created: 2021-02-10 07:08:01, modified: 2021-02-05 12:30:30</span></li>
+<li>nanobox_cli.sh<span>5.36KB&nbsp;|&nbsp;created: 2021-02-10 07:08:01, modified: 2021-02-05 12:30:30</span></li>
+<li>nginx.sh<span>4.95KB&nbsp;|&nbsp;created: 2021-02-10 07:08:01, modified: 2021-02-05 12:30:30</span></li>
+<li>pm2.sh<span>1.26KB&nbsp;|&nbsp;created: 2021-02-10 07:08:01, modified: 2021-02-05 12:30:30</span></li>
+<li>sublime_text.md<span>2.9KB&nbsp;|&nbsp;created: 2021-02-10 07:08:02, modified: 2021-02-05 12:30:30</span></li>
+<li>ubuntu.sh<span>703B&nbsp;|&nbsp;created: 2021-02-10 07:08:02, modified: 2021-02-05 12:30:30</span></li>
+<li>vim.txt<span>23.81KB&nbsp;|&nbsp;created: 2021-02-10 07:08:02, modified: 2021-02-05 12:30:30</span></li>
+<li>vscode.md<span>8.61KB&nbsp;|&nbsp;created: 2021-02-10 07:08:02, modified: 2021-02-05 12:30:30</span></li>
+<li>xcode.txt<span>3.57KB&nbsp;|&nbsp;created: 2021-02-10 07:08:02, modified: 2021-02-05 12:30:30</span></li>
+</ul>
+</details>
+</section>
+</body>
+</html>

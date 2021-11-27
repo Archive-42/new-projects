@@ -1,0 +1,2873 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)"><link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/w11.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/mdn-article.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/markdown-to-html-style.css"> -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/mdn-article.css"> -->
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/medium-basic-export.css"> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/mono-blue.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/monokai-sublime.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/monokai.css">
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/notion.css"> -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script>
+  $( document ).ready( function ( $ ) {
+
+    $( 'img' ).each( function () {
+      $( this ).removeAttr( 'style' )
+
+    } );
+
+  } );
+  $( function () {
+    $( 'img' ).removeAttr( "style" );
+  } );
+  $( document ).ready( function ( $ ) {
+    $( 'img' ).each( function () {
+      $( this ).removeAttr( 'style' )
+      $( this ).hide();
+    } );
+  } );
+</script>
+<script async defer src="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/jquery.js"></script>
+<script async defer src="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/jquery-ui.js"></script>
+<style>
+  p.MsoNormal,
+  li.MsoNormal,
+  div.MsoNormal {
+
+    font-size: 16.0pt;
+    font-family: "Times New Roman", serif;
+  }
+
+  /* 
+    @page WordSection1 {
+      size: 11.0in 17.0in;
+      margin: 32.15pt 1.0in 0in 34.0pt;
+    }
+
+
+    @page WordSection2 {
+      size: 11.0in 17.0in;
+      margin: 32.15pt 1.0in 0in 34.0pt;
+    }
+
+
+    @page WordSection3 {
+      size: 11.0in 1224.9pt;
+      margin: 28.5pt 1.0in 0in 34.0pt;
+    }
+
+    @page WordSection4 {
+      size: 11.0in 1224.9pt;
+      margin: 28.5pt 1.0in 0in 34.0pt;
+    }
+
+
+
+    @page WordSection5 {
+      size: 11.0in 1228.45pt;
+      margin: 39.9pt 1.0in 0in 34.0pt;
+    }
+
+
+    @page WordSection6 {
+      size: 11.0in 1228.45pt;
+      margin: 39.9pt 1.0in 0in 34.0pt;
+    }
+
+
+
+    @page WordSection7 {
+      size: 11.0in 1227.9pt;
+      margin: 39.9pt 1.0in 0in 34.0pt;
+    }
+
+
+    @page WordSection8 {
+      size: 11.0in 17.0in;
+      margin: 27.9pt 1.0in 2.65pt 34.0pt;
+    }
+
+
+
+    @page WordSection9 {
+      size: 11.0in 17.0in;
+      margin: 39.9pt 42.0pt 0in 34.0pt;
+    }
+
+
+
+    @page WordSection10 {
+      size: 11.0in 17.0in;
+      margin: 27.9pt 40.0pt .4pt 34.0pt;
+    }
+
+
+    @page WordSection11 {
+      size: 11.0in 17.0in;
+      margin: 27.9pt 40.0pt .4pt 34.0pt;
+    }
+
+
+    @page WordSection12 {
+      size: 11.0in 17.0in;
+      margin: 28.9pt 47.0pt 2.45pt 34.0pt;
+    }
+
+
+    @page WordSection13 {
+      size: 11.0in 17.0in;
+      margin: 28.9pt 47.0pt 2.45pt 34.0pt;
+    }
+
+
+
+    @page WordSection14 {
+      size: 11.0in 17.0in;
+      margin: 39.9pt 59.0pt 6.2pt 34.0pt;
+    }
+
+
+*{
+  line-height: normal;
+  line-gap-override: 1.0;
+}
+    @page WordSection15 {
+      size: 11.0in 17.0in;
+      margin: 39.9pt 59.0pt 6.2pt 34.0pt;
+    }
+
+
+    @page WordSection16 {
+      size: 11.0in 1231.65pt;
+      margin: 39.9pt 1.0in 0in 34.0pt;
+    }
+
+    @page WordSection17 {
+      size: 11.0in 1231.5pt;
+      margin: 27.9pt 69.0pt 0in 34.0pt;
+    } */
+  body {
+    background: #ccc;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+    /* min-height: 10000px;  */
+    width: 80vw;
+    margin: 100px auto;
+    background: white;
+    border-radius: 5px;
+    font-size: larger;
+  }
+
+  span+span {
+    margin-left: 20px !important;
+  }
+</style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal><a name=page1></a><b><span style='font-size:23.0pt;
+font-family:"Arial",sans-serif;color:#333333'>HTTP Learning Objectives</span></b></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:absolute;
+z-index:-1895862784;margin-left:0px;margin-top:17px;width:904px;height:1px'><img
+width=904 height=1 src="w6-study-guide_files/image001.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:18.45pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:185%'><span style='font-size:10.0pt;
+line-height:185%;font-family:"Arial",sans-serif;color:#333333'>HTTP stands for <b>HyperText
+Transfer Protocol.</b> Is a protocol for transmitting hypermedia documents,
+such as HTML. HTTP requests can have up to three parts: a request line,
+headers, and a body.</span></p>
+
+<p class=MsoNormal style='line-height:2.75pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;font-family:"Arial",sans-serif;
+color:#333333'>1. Match the header fields of HTTP with a bank of definitions</span></b></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:absolute;
+z-index:-1895861760;margin-left:0px;margin-top:14px;width:904px;height:1px'><img
+width=904 height=1 src="w6-study-guide_files/image001.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:16.8pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:8.0pt;line-height:185%'><b><span
+style='font-size:10.0pt;line-height:185%;font-family:"Arial",sans-serif;
+color:#333333'>HTTP headers </span></b><span style='font-size:10.0pt;
+line-height:185%;font-family:"Arial",sans-serif;color:#333333'>let the client
+and the server pass additional information with an HTTP request or response.
+Here are some common request headers you'll<b> </b>see:</span></p>
+
+<p class=MsoNormal style='line-height:5.35pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:20.0pt'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;color:#333333'>Host: specifies the domain name
+of the server.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895860736'><span style='position:absolute;left:9px;top:-8px;
+width:7px;height:7px'><img width=7 height=7
+src="w6-study-guide_files/image002.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:4.3pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:20.0pt'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;color:#333333'>User-Agent: a string that
+identifies the operating system, software vendor or version of the requester.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895859712'><span style='position:absolute;left:9px;top:-10px;
+width:7px;height:7px'><img width=7 height=7
+src="w6-study-guide_files/image002.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:3.5pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:20.0pt'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;color:#333333'>Referer: the address of the
+previous web page from which a link to the currently requested page was
+followed.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895858688'><span style='position:absolute;left:9px;top:-10px;
+width:7px;height:7px'><img width=7 height=7
+src="w6-study-guide_files/image002.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:3.5pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:20.0pt'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;color:#333333'>Accept: informs the server about
+the types of data that can be sent back.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895857664'><span style='position:absolute;left:9px;top:-9px;
+width:7px;height:7px'><img width=7 height=7
+src="w6-study-guide_files/image002.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:3.5pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:20.0pt'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;color:#333333'>Content-Type: Indicates the media
+type found in the body of the HTTP message.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895856640'><span style='position:absolute;left:9px;top:-9px;
+width:7px;height:7px'><img width=7 height=7
+src="w6-study-guide_files/image002.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:16.1pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:4.0pt;margin-bottom:0in;
+margin-left:0in;margin-bottom:.0001pt;text-indent:0in;line-height:137%'><b><span
+style='font-size:18.0pt;line-height:137%;font-family:"Arial",sans-serif;
+color:#333333'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:18.0pt;line-height:137%;font-family:"Arial",sans-serif;
+color:#333333'>Matching HTTP verbs (GET, PUT, PATCH, POST, DELETE) to their
+common uses</span></b></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895855616'><span style='position:absolute;left:0px;top:-6px;
+width:904px;height:1px'><img width=904 height=1
+src="w6-study-guide_files/image001.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:11.5pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#333333'>HTTP defines a set of request methods to indicate the desired
+action to be performed for a given resource.</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.5pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:20.0pt'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;color:#333333'>GET: a request to retrieve data.
+It will never have a body.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895854592'><span style='position:absolute;left:9px;top:-8px;
+width:7px;height:7px'><img width=7 height=7
+src="w6-study-guide_files/image002.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:4.3pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:20.0pt'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;color:#333333'>POST: sends data to the server
+creating a new resource.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895853568'><span style='position:absolute;left:9px;top:-9px;
+width:7px;height:7px'><img width=7 height=7
+src="w6-study-guide_files/image002.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:3.5pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:20.0pt'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;color:#333333'>PUT: updates a resource on the
+server.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895852544'><span style='position:absolute;left:9px;top:-9px;
+width:7px;height:7px'><img width=7 height=7
+src="w6-study-guide_files/image002.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:3.5pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:20.0pt'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;color:#333333'>PATCH: similar to PUT, but it
+applies partial modifications to a resource.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895851520'><span style='position:absolute;left:9px;top:-9px;
+width:7px;height:7px'><img width=7 height=7
+src="w6-study-guide_files/image002.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:3.5pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:20.0pt'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;color:#333333'>DELETE: deletes the specified
+resource.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895850496'><span style='position:absolute;left:9px;top:-9px;
+width:7px;height:7px'><img width=7 height=7
+src="w6-study-guide_files/image002.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:17.1pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:3.0pt;margin-bottom:0in;
+margin-left:0in;margin-bottom:.0001pt;text-indent:0in;line-height:137%'><b><span
+style='font-size:18.0pt;line-height:137%;font-family:"Arial",sans-serif;
+color:#333333'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:18.0pt;line-height:137%;font-family:"Arial",sans-serif;
+color:#333333'>Match common HTTP status codes (200, 302, 400, 401, 402, 403,
+404, 500) to their meanings</span></b></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895849472'><span style='position:absolute;left:0px;top:-7px;
+width:904px;height:1px'><img width=904 height=1
+src="w6-study-guide_files/image001.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:11.5pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#333333'>HTTP response status codes indicate whether a specific HTTP
+request has been successfully completed.</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.5pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:20.0pt'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;color:#333333'>200: OK. The request has
+succeeded.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895848448'><span style='position:absolute;left:9px;top:-8px;
+width:7px;height:7px'><img width=7 height=7
+src="w6-study-guide_files/image002.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:4.3pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:20.0pt'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;color:#333333'>302: Found. The URI of requested
+resource has been changed temporarily.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895847424'><span style='position:absolute;left:9px;top:-9px;
+width:7px;height:7px'><img width=7 height=7
+src="w6-study-guide_files/image002.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:3.5pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:20.0pt'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;color:#333333'>400: Bad Request. The server
+could not understand the request due to invalid syntax.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895846400'><span style='position:absolute;left:9px;top:-9px;
+width:7px;height:7px'><img width=7 height=7
+src="w6-study-guide_files/image002.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:3.5pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:20.0pt'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;color:#333333'>401: Unathorized. The client must
+authenticate itself to get the requested response.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895845376'><span style='position:absolute;left:9px;top:-9px;
+width:7px;height:7px'><img width=7 height=7
+src="w6-study-guide_files/image002.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:3.5pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:20.0pt'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;color:#333333'>402: Payment Required.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895844352'><span style='position:absolute;left:9px;top:-9px;
+width:7px;height:7px'><img width=7 height=7
+src="w6-study-guide_files/image002.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:3.5pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:20.0pt'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;color:#333333'>403: Forbidden. The client does
+not have access rights to the content.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895843328'><span style='position:absolute;left:9px;top:-9px;
+width:7px;height:7px'><img width=7 height=7
+src="w6-study-guide_files/image002.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:3.5pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:20.0pt'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;color:#333333'>404: Not Found. The server can
+not find the requested resource.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895842304'><span style='position:absolute;left:9px;top:-9px;
+width:7px;height:7px'><img width=7 height=7
+src="w6-study-guide_files/image002.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:3.5pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:20.0pt'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;color:#333333'>500: Internal Server Error. The
+range from 500-599 indicate server errors.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895841280'><span style='position:absolute;left:9px;top:-9px;
+width:7px;height:7px'><img width=7 height=7
+src="w6-study-guide_files/image002.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:17.1pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;font-family:"Arial",sans-serif;
+color:#333333'>4. Send a simple HTTP request to google.com</span></b></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:absolute;
+z-index:-1895840256;margin-left:0px;margin-top:13px;width:904px;height:1px'><img
+width=904 height=1 src="w6-study-guide_files/image001.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:15.9pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#333333'>netcat (nc) allows you to open a direct connection with a URL
+and manually send HTTP requests.</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.4pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#333333'>Request</span></b></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:absolute;
+z-index:-1895839232;margin-left:0px;margin-top:27px;width:904px;height:80px'><img
+width=904 height=80 src="w6-study-guide_files/image003.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:17.35pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>nc -v google.com 80</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>GET / HTTP/1.1</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:14.8pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#333333'>Response</span></b></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:absolute;
+z-index:-1895838208;margin-left:0px;margin-top:26px;width:904px;height:184px'><img
+width=904 height=184 src="w6-study-guide_files/image004.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:17.35pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>HTTP/1.1 200 OK</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>Date: Thu, 28 May 2020 20:50:17
+GMT</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>Expires: -1</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>Cache-Control: private, max-age=0</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>Content-Type: text/html;
+charset=ISO-8859-1</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>&lt;!doctype html&gt;</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>&lt;html&gt;</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:12.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>&lt;/html&gt;</span></p>
+
+</div>
+
+<span style='font-size:11.0pt;font-family:"Times New Roman",serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection2>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:27.0pt;margin-bottom:
+0in;margin-left:0in;margin-bottom:.0001pt;text-indent:0in;line-height:137%'><a
+name=page2></a><b><span style='font-size:18.0pt;line-height:137%;font-family:
+"Arial",sans-serif;color:#333333'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span></b><b><span style='font-size:18.0pt;line-height:137%;font-family:
+"Arial",sans-serif;color:#333333'>Write a very simple HTTP server using ‘http’
+in node with paths that will result in the common HTTP status codes</span></b></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895837184'><span style='position:absolute;left:0px;top:-6px;
+width:904px;height:397px'><img width=904 height=397
+src="w6-study-guide_files/image005.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:18.2pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>const </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>http =<b> </b></span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#0086B3'>require</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>(</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>'http'</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:15.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>http.createServer(<b>function</b>(request,
+response) {</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>if </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>(request.url
+===<b> </b></span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#DD1144'>'/'</span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#333333'>) {</span></p>
+
+<p class=MsoNormal style='line-height:3.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>response.writeHead(</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:82.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:teal'>200</span><span style='font-size:
+9.0pt;font-family:"Arial",sans-serif;color:#333333'>,</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:82.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>{ </span><span style='font-size:
+9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>'Content-Type'</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>: </span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>'text/html'</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'> }</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>response.write(</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>'&lt;h1&gt;OK&lt;/h1&gt;'</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>response.end();</span></p>
+
+<p class=MsoNormal style='line-height:1.6pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>} <b>else</b> {</span></p>
+
+<p class=MsoNormal style='line-height:3.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>response.writeHead(</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:teal'>404</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>response.end();</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>}</span></p>
+
+<p class=MsoNormal style='line-height:1.6pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>}).listen(</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:teal'>8080</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>, <b>function</b>()
+{</span></p>
+
+<p class=MsoNormal style='line-height:3.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#0086B3'>console</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>.log(</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#DD1144'>'listening for requests on port
+8080...'</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>});</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:16.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:23.0pt;font-family:"Arial",sans-serif;
+color:#333333'>Promises Lesson Learning Objectives I</span></b></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:absolute;
+z-index:-1895836160;margin-left:0px;margin-top:16px;width:904px;height:1px'><img
+width=904 height=1 src="w6-study-guide_files/image001.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:15.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;font-family:"Arial",sans-serif;
+color:#333333'>1. Instantiate a Promise object</span></b></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:absolute;
+z-index:-1895835136;margin-left:0px;margin-top:13px;width:904px;height:311px'><img
+width=904 height=311 src="w6-study-guide_files/image006.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.6pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>const </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>myPromise
+=<b> new </b></span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#0086B3'>Promise</span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#333333'>((resolve, reject) =&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>try </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>{</span></p>
+
+<p class=MsoNormal style='line-height:3.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:285.0pt;margin-bottom:
+0in;margin-left:60.0pt;margin-bottom:.0001pt;text-indent:.15pt;line-height:
+122%'><span style='font-size:9.0pt;line-height:122%;font-family:"Arial",sans-serif;
+color:#999988'>//<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style='font-size:9.0pt;line-height:122%;font-family:
+"Arial",sans-serif;color:#999988'>try some code, if it works, then we can call
+`resolve()` </span></i><span style='font-size:9.0pt;line-height:122%;
+font-family:"Arial",sans-serif;color:#333333'>someAsynchronousFunctionThatMightFail(result
+=&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:.3pt'><i><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#999988'>&nbsp;</span></i></p>
+
+<p class=MsoNormal style='margin-left:98.0pt;text-indent:-16.3pt'><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>//<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>If the
+async function works, it'll call this callback</span></i></p>
+
+<p class=MsoNormal style='line-height:2.9pt'><i><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#999988'>&nbsp;</span></i></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:253.0pt;margin-bottom:
+0in;margin-left:82.0pt;margin-bottom:.0001pt;text-indent:-.3pt;line-height:
+122%'><span style='font-size:9.0pt;line-height:122%;font-family:"Arial",sans-serif;
+color:#999988'>//<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style='font-size:9.0pt;line-height:122%;font-family:
+"Arial",sans-serif;color:#999988'>and pass us the result of whatever it did. </span></i><span
+style='font-size:9.0pt;line-height:122%;font-family:"Arial",sans-serif;
+color:#333333'>resolve(result); </span><i><span style='font-size:9.0pt;
+line-height:122%;font-family:"Arial",sans-serif;color:#999988'>// Then we can
+call resolve with the result.</span></i></p>
+
+<p class=MsoNormal style='line-height:.3pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>});</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>}</span></p>
+
+<p class=MsoNormal style='line-height:1.6pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>catch </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>(error) {</span></p>
+
+<p class=MsoNormal style='line-height:3.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:285.0pt;margin-bottom:
+0in;margin-left:60.0pt;margin-bottom:.0001pt;text-indent:.15pt;line-height:
+111%'><span style='font-size:9.0pt;line-height:111%;font-family:"Arial",sans-serif;
+color:#999988'>//<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style='font-size:9.0pt;line-height:111%;font-family:
+"Arial",sans-serif;color:#999988'>if we get an error we can call `reject()`
+with the error </span></i><span style='font-size:9.0pt;line-height:111%;
+font-family:"Arial",sans-serif;color:#333333'>reject(error);</span></p>
+
+<p class=MsoNormal style='line-height:14.25pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>}</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>});</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:13.3pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;font-family:"Arial",sans-serif;
+color:#333333'>2. Use Promises to write more maintainable asynchronous code</span></b></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:absolute;
+z-index:-1895834112;margin-left:0px;margin-top:13px;width:904px;height:1px'><img
+width=904 height=1 src="w6-study-guide_files/image001.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:15.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#333333'>Let's assume we want to wait 10 seconds, do a thing, then wait
+10 more then do</span></p>
+
+<p class=MsoNormal style='line-height:5.3pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:308.0pt;line-height:177%'><span
+style='font-size:10.0pt;line-height:177%;font-family:"Arial",sans-serif;
+color:#333333'>a different thing, then wait 30 seconds and do a final thing. We
+can use setTimeout but with callbacks it looks like this:</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:absolute;
+z-index:-1895833088;margin-left:0px;margin-top:8px;width:904px;height:201px'><img
+width=904 height=201 src="w6-study-guide_files/image007.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:13.05pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>setTimeout(() =&gt; { </span><i><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>// Look at
+all the deep nesting!</span></i></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>doAThing();</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>setTimeout(() =&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>doADifferentThing();</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>setTimeout(() =&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:82.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>doAFinalThing();</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>}, </span><span style='font-size:
+9.0pt;font-family:"Arial",sans-serif;color:teal'>30000</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>)</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>}, </span><span style='font-size:
+9.0pt;font-family:"Arial",sans-serif;color:teal'>10000</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>)</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>}, </span><span style='font-size:
+9.0pt;font-family:"Arial",sans-serif;color:teal'>10000</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>)</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:14.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#333333'>If we wrap setTimeout in a promise like this:</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:absolute;
+z-index:-1895832064;margin-left:0px;margin-top:27px;width:904px;height:132px'><img
+width=904 height=132 src="w6-study-guide_files/image008.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:16.2pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>const </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>sleep = (milliseconds)
+=&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>return new </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#0086B3'>Promise</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>((resolve)
+=&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:3.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>setTimeout(resolve,
+milliseconds);</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>});</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>}</span></p>
+
+</div>
+
+<span style='font-size:11.0pt;font-family:"Times New Roman",serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection3>
+
+<p class=MsoNormal><a name=page3></a><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif;color:#333333'>Then we can write code that looks like this
+using our </span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#333333'>sleep</span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#333333'> function.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895831040'><span style='position:absolute;left:0px;top:-14px;
+width:904px;height:433px'><img width=904 height=433
+src="w6-study-guide_files/image009.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:17.25pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>sleep(</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:teal'>1000</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>)</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>.then(() =&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:2.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:258.0pt;margin-bottom:
+0in;margin-left:130.0pt;margin-bottom:.0001pt;text-indent:-69.95pt;line-height:
+122%'><span style='font-size:9.0pt;line-height:122%;font-family:"Arial",sans-serif;
+color:#333333'>doAThing();</span><span style='font-size:10.0pt;line-height:
+122%'>         </span><i><span style='font-size:9.0pt;line-height:122%;
+font-family:"Arial",sans-serif;color:#999988'>// We don't need to return a
+promise here `.then()` // automatically returns one anyway.</span></i></p>
+
+<p class=MsoNormal style='line-height:.3pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>})</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>.then(() =&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:1.6pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>return </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>sleep(</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:teal'>1000</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>);<b> </b></span><i><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>// We have
+to return the promise we</span></i></p>
+
+<p class=MsoNormal style='line-height:3.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:184.0pt;text-indent:-16.05pt'><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>//<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>got from
+the sleep function</span></i></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><i><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#999988'>&nbsp;</span></i></p>
+
+<p class=MsoNormal style='margin-left:184.0pt;text-indent:-16.05pt'><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>//<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>then() is
+smart enough to know when</span></i></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><i><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#999988'>&nbsp;</span></i></p>
+
+<p class=MsoNormal style='margin-left:184.0pt;text-indent:-16.05pt'><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>//<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>we return
+a promise vs just returning a value</span></i></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>})</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>.then(() =&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>doADifferentThing();</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>})</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>.then(() =&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:1.6pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>return </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>sleep(</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:teal'>3000</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:3.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>})</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>.then(() =&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>doAFinalThing();</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>});</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:14.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#333333'>Using shortened arrow function syntax we can make this even
+shorter and</span></p>
+
+<p class=MsoNormal style='line-height:5.3pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#333333'>make it look really synchronous, even though it's asynchronous.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:absolute;
+z-index:-1895830016;margin-left:0px;margin-top:25px;width:904px;height:167px'><img
+width=904 height=167 src="w6-study-guide_files/image010.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:16.45pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>sleep(</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:teal'>1000</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>)</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>.then(() =&gt; doAThing())</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>.then(() =&gt; sleep(</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:teal'>1000</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>))</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>.then(() =&gt;
+doADifferentThing())</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>.then(() =&gt; sleep(</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:teal'>3000</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>))</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>.then(() =&gt; doAFinalThing());</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:17.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#333333'>You can also use </span><span style='font-size:9.0pt;font-family:
+"Arial",sans-serif;color:#333333'>Promise.all()</span><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif;color:#333333'> when you don't care about
+the order.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895828992'><span style='position:absolute;left:0px;top:-15px;
+width:904px;height:416px'><img width=904 height=416
+src="w6-study-guide_files/image011.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:16.2pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>const </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>fs =<b> </b></span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#0086B3'>require</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>(</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>'fs'</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>).promises<b>
+</b></span><i><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#999988'>// requires the promises version of fs</span></i></p>
+
+<p class=MsoNormal style='line-height:16.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:5.0in;margin-bottom:0in;
+margin-left:17.0pt;margin-bottom:.0001pt;text-indent:0in;line-height:111%'><span
+style='font-size:9.0pt;line-height:111%;font-family:"Arial",sans-serif;
+color:#999988'>//<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><i><span style='font-size:9.0pt;line-height:111%;font-family:
+"Arial",sans-serif;color:#999988'>Read in three files and concatenate them
+together. </span></i><span style='font-size:9.0pt;line-height:111%;font-family:
+"Arial",sans-serif;color:#0086B3'>Promise</span><span style='font-size:9.0pt;
+line-height:111%;font-family:"Arial",sans-serif;color:#333333'>.all([</span></p>
+
+<p class=MsoNormal style='line-height:14.45pt'><i><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#999988'>&nbsp;</span></i></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:463.0pt;margin-bottom:
+0in;margin-left:39.0pt;margin-bottom:.0001pt;text-align:justify;text-justify:
+inter-ideograph;line-height:124%'><span style='font-size:9.0pt;line-height:
+124%;font-family:"Arial",sans-serif;color:#333333'>fs.readFile(</span><span
+style='font-size:9.0pt;line-height:124%;font-family:"Arial",sans-serif;
+color:#DD1144'>&quot;d1.md&quot;</span><span style='font-size:9.0pt;line-height:
+124%;font-family:"Arial",sans-serif;color:#333333'>, </span><span
+style='font-size:9.0pt;line-height:124%;font-family:"Arial",sans-serif;
+color:#DD1144'>&quot;utf-8&quot;</span><span style='font-size:9.0pt;line-height:
+124%;font-family:"Arial",sans-serif;color:#333333'>), fs.readFile(</span><span
+style='font-size:9.0pt;line-height:124%;font-family:"Arial",sans-serif;
+color:#DD1144'>&quot;d2.md&quot;</span><span style='font-size:9.0pt;line-height:
+124%;font-family:"Arial",sans-serif;color:#333333'>, </span><span
+style='font-size:9.0pt;line-height:124%;font-family:"Arial",sans-serif;
+color:#DD1144'>&quot;utf-8&quot;</span><span style='font-size:9.0pt;line-height:
+124%;font-family:"Arial",sans-serif;color:#333333'>), fs.readFile(</span><span
+style='font-size:9.0pt;line-height:124%;font-family:"Arial",sans-serif;
+color:#DD1144'>&quot;d3.md&quot;</span><span style='font-size:9.0pt;line-height:
+124%;font-family:"Arial",sans-serif;color:#333333'>, </span><span
+style='font-size:9.0pt;line-height:124%;font-family:"Arial",sans-serif;
+color:#DD1144'>&quot;utf-8&quot;</span><span style='font-size:9.0pt;line-height:
+124%;font-family:"Arial",sans-serif;color:#333333'>),</span></p>
+
+<p class=MsoNormal style='line-height:.15pt'><i><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#999988'>&nbsp;</span></i></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>])</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><i><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#999988'>&nbsp;</span></i></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>.then((contents1, contents2,
+contents3) =&gt; { </span><i><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#999988'>// Even though they run</span></i></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><i><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#999988'>&nbsp;</span></i></p>
+
+<p class=MsoNormal style='margin-left:276.0pt;text-indent:-16.4pt'><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>//<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>asynchronously</span></i></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><i><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#999988'>&nbsp;</span></i></p>
+
+<p class=MsoNormal style='margin-left:276.0pt;text-indent:-16.4pt'><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>//<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>in an
+indeterminate order,</span></i></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><i><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#999988'>&nbsp;</span></i></p>
+
+<p class=MsoNormal style='margin-left:276.0pt;text-indent:-16.4pt'><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>//<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>Promise.all
+keeps them in the</span></i></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><i><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#999988'>&nbsp;</span></i></p>
+
+<p class=MsoNormal style='margin-left:276.0pt;text-indent:-16.4pt'><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>//<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>right
+order in the arguments</span></i></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><i><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#999988'>&nbsp;</span></i></p>
+
+<p class=MsoNormal style='margin-left:276.0pt;text-indent:-16.4pt'><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>//<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>list</span></i></p>
+
+<p class=MsoNormal style='line-height:1.6pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>return </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>contents1
++ contents2 + contents3;</span></p>
+
+<p class=MsoNormal style='line-height:3.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>})</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>.then((concatted) =&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#0086B3'>console</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>.log(concatted);</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>});</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:14.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#333333'>Imagine if we tried to do this without Promises:</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:absolute;
+z-index:-1895827968;margin-left:0px;margin-top:27px;width:904px;height:201px'><img
+width=904 height=201 src="w6-study-guide_files/image012.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:16.2pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>const </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>fs =<b> </b></span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#0086B3'>require</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>(</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>'fs'</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:16.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>fs.readFile(</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;d1.md&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>, </span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;utf-8&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>,
+contents1 =&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>fs.readFile(</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;d1.md&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>, </span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;utf-8&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>,
+contents2 =&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>fs.readFile(</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;d3.md&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>, </span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;utf-8&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>,
+contents3 =&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:82.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#0086B3'>console</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>.log(contents1
++ contents2 + contents3);</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>});</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>});</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>});</span></p>
+
+</div>
+
+<span style='font-size:11.0pt;font-family:"Times New Roman",serif'><br
+clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection4>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:14.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:9.5pt;font-family:"Arial",sans-serif;
+color:#333333'>In fact this isn't doing the same thing at all! This is actually
+only reading</span></p>
+
+<p class=MsoNormal style='line-height:5.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#333333'>the next file when the first one is completed. Promise.all() is
+probably</span></p>
+
+<p class=MsoNormal style='line-height:4.5pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#333333'>faster since all the readFiles are kicked off at the same time.</span></p>
+
+</div>
+
+<span style='font-size:11.0pt;font-family:"Times New Roman",serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection5>
+
+<p class=MsoNormal><a name=page4></a><b><span style='font-size:18.0pt;
+font-family:"Arial",sans-serif;color:#333333'>3. Use the fetch API to make
+Promise-based API calls</span></b></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:absolute;
+z-index:-1895826944;margin-left:0px;margin-top:13px;width:904px;height:1px'><img
+width=904 height=1 src="w6-study-guide_files/image001.jpg"></span><span
+style='position:absolute;z-index:-1895825920;margin-left:0px;margin-top:35px;
+width:904px;height:201px'><img width=904 height=201
+src="w6-study-guide_files/image012.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.6pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:258.0pt;margin-bottom:
+0in;margin-left:3.0in;margin-bottom:.0001pt;text-indent:-199.4pt;line-height:
+117%'><b><span style='font-size:9.0pt;line-height:117%;font-family:"Arial",sans-serif;
+color:#333333'>const </span></b><span style='font-size:9.0pt;line-height:117%;
+font-family:"Arial",sans-serif;color:#333333'>fetch =<b> </b></span><span
+style='font-size:9.0pt;line-height:117%;font-family:"Arial",sans-serif;
+color:#0086B3'>require</span><span style='font-size:9.0pt;line-height:117%;
+font-family:"Arial",sans-serif;color:#333333'>(</span><span style='font-size:
+9.0pt;line-height:117%;font-family:"Arial",sans-serif;color:#DD1144'>'node-fetch'</span><span
+style='font-size:9.0pt;line-height:117%;font-family:"Arial",sans-serif;
+color:#333333'>);<b> </b></span><i><span style='font-size:9.0pt;line-height:
+117%;font-family:"Arial",sans-serif;color:#999988'>// we need this to use fetch
+in node</span></i><b><span style='font-size:9.0pt;line-height:117%;font-family:
+"Arial",sans-serif;color:#333333'> </span></b><i><span style='font-size:9.0pt;
+line-height:117%;font-family:"Arial",sans-serif;color:#999988'>// It's built
+into the browser</span></i></p>
+
+<p class=MsoNormal style='line-height:14.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>fetch(</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;https://ifconfig.me/all.json&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>)</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:28.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>.then((response) =&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:1.6pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>return </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>response.json();<b>
+</b></span><i><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#999988'>// the json() method returns a promise and is async</span></i></p>
+
+<p class=MsoNormal style='line-height:3.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:28.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>})</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:28.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>.then((data) =&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#0086B3'>console</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>.log(data);</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:28.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>});</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:16.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:23.0pt;font-family:"Arial",sans-serif;
+color:#333333'>Async and Await Learning Objectives</span></b></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:absolute;
+z-index:-1895824896;margin-left:0px;margin-top:16px;width:904px;height:1px'><img
+width=904 height=1 src="w6-study-guide_files/image001.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:15.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:0in;text-indent:0in;line-height:137%'><b><span
+style='font-size:18.0pt;line-height:137%;font-family:"Arial",sans-serif;
+color:#333333'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:18.0pt;line-height:137%;font-family:"Arial",sans-serif;
+color:#333333'>Use async/await with promise-based functions to write
+asynchronous code that behaves synchronously.</span></b></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895823872'><span style='position:absolute;left:0px;top:-7px;
+width:904px;height:484px'><img width=904 height=484
+src="w6-study-guide_files/image013.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:18.2pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>function </span></b><b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#990000'>slow</span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>() {</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>return new </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#0086B3'>Promise</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>((resolve,
+reject) =&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:3.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>setTimeout(() =&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:82.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>resolve(</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>'That was
+slow.'</span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>}, </span><span style='font-size:
+9.0pt;font-family:"Arial",sans-serif;color:teal'>2000</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>});</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>}</span></p>
+
+<p class=MsoNormal style='line-height:14.6pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>function </span></b><b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#990000'>fast</span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>() {</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>return new </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#0086B3'>Promise</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>((resolve,
+reject) =&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:3.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>setTimeout(() =&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:82.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>resolve(</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>'That was
+fast.'</span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>}, </span><span style='font-size:
+9.0pt;font-family:"Arial",sans-serif;color:teal'>1000</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>});</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>}</span></p>
+
+<p class=MsoNormal style='line-height:14.6pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>async function </span></b><b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#990000'>syncLike</span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>() {</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>const </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>slowVal =<b>
+await </b>slow();</span></p>
+
+<p class=MsoNormal style='line-height:3.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#0086B3'>console</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>.log(slowVal);</span></p>
+
+<p class=MsoNormal style='line-height:1.6pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>const </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>fastVal =<b>
+await </b>fast();</span></p>
+
+<p class=MsoNormal style='line-height:3.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#0086B3'>console</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>.log(fastVal);</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>}</span></p>
+
+<p class=MsoNormal style='line-height:15.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>syncLike(); </span><i><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>// Prints
+'that was slow.' after 2000ms, then 'that was fast.' after 1000ms</span></i></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:14.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#333333'>The real power comes in leveraging libraries that support
+promises like </span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#333333'>fs</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895822848'><span style='position:absolute;left:409px;top:-14px;
+width:24px;height:20px'><img width=24 height=20
+src="w6-study-guide_files/image014.jpg"></span></span><span style='position:
+absolute;z-index:-1895821824;margin-left:15px;margin-top:7px;width:45px;
+height:20px'><img width=45 height=20 src="w6-study-guide_files/image015.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:4.3pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#333333'>of </span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#333333'>fetch</span></p>
+
+<p class=MsoNormal style='line-height:19.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#333333'>Instead of:</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:absolute;
+z-index:-1895820800;margin-left:0px;margin-top:27px;width:904px;height:271px'><img
+width=904 height=271 src="w6-study-guide_files/image016.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:16.2pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>const </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>fs =<b> </b></span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#0086B3'>require</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>(</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;fs&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:15.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>function </span></b><b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#990000'>concatFiles</span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>() {</span></p>
+
+<p class=MsoNormal style='line-height:3.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>fs.readFile(</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;d1.md&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>, </span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;utf-8&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>, (err,
+contents1) =&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>fs.readFile(</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;d1.md&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>, </span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;utf-8&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>, (err,
+contents2) =&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:82.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>fs.readFile(</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;d3.md&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>, </span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;utf-8&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>, (err,
+contents3) =&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:82.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#0086B3'>console</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>.log(contents1
++ contents2 + contents3);</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:82.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>});</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>});</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>});</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>}</span></p>
+
+<p class=MsoNormal style='line-height:15.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>concatFiles();</span></p>
+
+</div>
+
+<span style='font-size:11.0pt;font-family:"Times New Roman",serif'><br
+clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection6>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:14.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:9.5pt;font-family:"Arial",sans-serif;
+color:#333333'>We can do this:</span></p>
+
+</div>
+
+<span style='font-size:11.0pt;font-family:"Times New Roman",serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection7>
+
+<p class=MsoNormal style='line-height:2.2pt'><span style='position:absolute;
+z-index:-1895819776;margin-left:76px;margin-top:76px;width:904px;height:219px'><img
+width=904 height=219 src="w6-study-guide_files/image017.jpg"></span><a
+name=page5></a></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>const </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>fs =<b> </b></span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#0086B3'>require</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>(</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;fs&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>).promises;</span></p>
+
+<p class=MsoNormal style='line-height:15.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>async function </span></b><b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#990000'>concatFiles</span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>() {</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>const </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>contents1
+=<b> await </b>fs.readFile(</span><span style='font-size:9.0pt;font-family:
+"Arial",sans-serif;color:#DD1144'>&quot;d1.md&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>,<b> </b></span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;utf-8&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>const </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>contents2
+=<b> await </b>fs.readFile(</span><span style='font-size:9.0pt;font-family:
+"Arial",sans-serif;color:#DD1144'>&quot;d2.md&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>,<b> </b></span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;utf-8&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>const </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>contents3
+=<b> await </b>fs.readFile(</span><span style='font-size:9.0pt;font-family:
+"Arial",sans-serif;color:#DD1144'>&quot;d3.md&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>,<b> </b></span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;utf-8&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:3.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#0086B3'>console</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>.log(contents1
++ contents2 + contents3);</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>}</span></p>
+
+<p class=MsoNormal style='line-height:15.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>concatFiles();</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:14.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#333333'>Or when using fetch, instead of this:</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:absolute;
+z-index:-1895818752;margin-left:0px;margin-top:26px;width:904px;height:340px'><img
+width=904 height=340 src="w6-study-guide_files/image018.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:16.2pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>const </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>fetch =<b>
+</b></span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#0086B3'>require</span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#333333'>(</span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#DD1144'>&quot;node-fetch&quot;</span><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:15.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>function </span></b><b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#990000'>getIpAddress</span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>(callback)
+{</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>return new </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#0086B3'>Promise</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>((resolve)
+=&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:3.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>fetch(</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;https://ifconfig.me/all.json&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>)</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>.then((response) =&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:1.6pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:82.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>return </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>response.json();</span></p>
+
+<p class=MsoNormal style='line-height:3.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>})</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>.then((ipInfo) =&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:82.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>resolve(ipInfo);</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>});</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>}</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>}</span></p>
+
+<p class=MsoNormal style='line-height:15.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>getIpAddress().then(ipInfo =&gt;
+{</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#0086B3'>console</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>.log(ipInfo);</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>})</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:14.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#333333'>We can just write this:</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:absolute;
+z-index:-1895817728;margin-left:0px;margin-top:27px;width:904px;height:271px'><img
+width=904 height=271 src="w6-study-guide_files/image016.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:16.2pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>const </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>fetch =<b>
+</b></span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#0086B3'>require</span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#333333'>(</span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#DD1144'>'node-fetch'</span><span style='font-size:9.0pt;font-family:
+"Arial",sans-serif;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:15.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>async function </span></b><b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#990000'>getIpAddress</span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>() {</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>const </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>response =<b>
+await </b>fetch(</span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#DD1144'>&quot;https://ifconfig.me/all.json&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:233.0pt;margin-bottom:
+0in;margin-left:39.0pt;margin-bottom:.0001pt;line-height:121%'><b><span
+style='font-size:9.0pt;line-height:121%;font-family:"Arial",sans-serif;
+color:#333333'>const </span></b><span style='font-size:9.0pt;line-height:121%;
+font-family:"Arial",sans-serif;color:#333333'>ipInfo =<b> await </b>response.json();<b>
+</b></span><i><span style='font-size:9.0pt;line-height:121%;font-family:"Arial",sans-serif;
+color:#999988'>// Remember .json() returns a promise</span></i><b><span
+style='font-size:9.0pt;line-height:121%;font-family:"Arial",sans-serif;
+color:#333333'> return </span></b><span style='font-size:9.0pt;line-height:
+121%;font-family:"Arial",sans-serif;color:#333333'>ipInfo;</span></p>
+
+<p class=MsoNormal style='line-height:14.5pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>}</span></p>
+
+<p class=MsoNormal style='line-height:15.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:33.0pt;text-indent:-16.0pt'><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>//<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>Rememeber
+to use await, we must be inside an async function, so</span></i></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><i><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#999988'>&nbsp;</span></i></p>
+
+<p class=MsoNormal style='margin-left:33.0pt;text-indent:-16.0pt'><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>//<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>I just
+made an async IIFE.</span></i></p>
+
+<p class=MsoNormal style='line-height:1.6pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>(<b>async</b>() =&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>const </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>ipInfo =<b>
+await </b>getIpAddress();</span></p>
+
+<p class=MsoNormal style='line-height:3.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>})()</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:14.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#333333'>Much better!</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.5pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:23.0pt;font-family:"Arial",sans-serif;
+color:#333333'>HTML Learning Objectives</span></b></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:absolute;
+z-index:-1895816704;margin-left:0px;margin-top:15px;width:904px;height:1px'><img
+width=904 height=1 src="w6-study-guide_files/image001.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:15.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:0in;text-indent:0in;line-height:116%'><b><span
+style='font-size:18.0pt;line-height:116%;font-family:"Arial",sans-serif;
+color:#333333'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:18.0pt;line-height:116%;font-family:"Arial",sans-serif;
+color:#333333'>You'll be able to create structurally and semantically valid
+HTML5 pages using the following elements: html, head, title, link, script, The
+six header tags, p, article, section, main, nav, header, footer, ul, ol, li, a,
+img, table, thead, tbody, tfoot, tr, th, td.</span></b></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:absolute;
+z-index:-1895815680;margin-left:0px;margin-top:0px;width:904px;height:1px'><img
+width=904 height=1 src="w6-study-guide_files/image001.jpg"></span></p>
+
+</div>
+
+<span style='font-size:11.0pt;font-family:"Times New Roman",serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection8>
+
+<p class=MsoNormal style='line-height:2.2pt'><span style='position:absolute;
+z-index:-1895814656;margin-left:76px;margin-top:76px;width:904px;height:361px'><img
+width=904 height=361 src="w6-study-guide_files/image019.jpg"></span><a
+name=page6></a></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#999999'>&lt;!DOCTYPE html&gt;</span></b></p>
+
+<p class=MsoNormal style='line-height:3.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:navy'>&lt;html&gt;</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:navy'>&lt;head&gt;</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:navy'>&lt;title&gt;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>HTML
+Example</span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:navy'>&lt;/title&gt;</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:navy'>&lt;link </span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:teal'>rel</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:navy'>=</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;stylesheet&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:navy'> </span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:teal'>href</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:navy'>=</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;style.css&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:navy'>&gt;</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:navy'>&lt;script </span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:teal'>async type</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:navy'>=</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;module&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:navy'> </span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:teal'>src</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:navy'>=</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;index.js&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:navy'>&gt;&lt;/script&gt;</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:navy'>&lt;/head&gt;</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:navy'>&lt;body&gt;</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:navy'>&lt;main&gt;</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:navy'>&lt;h1&gt;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>An HTML
+page example</span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:navy'>&lt;/h1&gt;</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:navy'>&lt;p&gt;</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:82.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>This is a very basic HTML page.
+For more examples click</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal align=right style='text-align:right'><span style='font-size:
+9.0pt;font-family:"Arial",sans-serif;color:navy'>&lt;a </span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:teal'>href</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:navy'>=</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;https://open.appacademy.io/learn/js-py---apr-2020-online/week-6-apr-2020-online/brushing-up-on-your-ht</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:navy'>&lt;/p&gt;</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:navy'>&lt;/main&gt;</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:navy'>&lt;/body&gt;</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:navy'>&lt;/html&gt;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:23.0pt;font-family:"Arial",sans-serif;
+color:#333333'>Testing Learning Objectives</span></b></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:absolute;
+z-index:-1895813632;margin-left:0px;margin-top:15px;width:904px;height:1px'><img
+width=904 height=1 src="w6-study-guide_files/image001.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:15.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;font-family:"Arial",sans-serif;
+color:#333333'>1. Explain the &quot;red-green-refactor&quot; loop of
+test-driven development.</span></b></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:absolute;
+z-index:-1895812608;margin-left:0px;margin-top:13px;width:904px;height:1px'><img
+width=904 height=1 src="w6-study-guide_files/image001.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:15.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#333333'>Red, Green, Refactor refers to the development loop at the heart
+of TDD.</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.4pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:12.0pt;margin-bottom:
+0in;margin-left:20.0pt;margin-bottom:.0001pt;line-height:142%'><b><span
+style='font-size:10.0pt;line-height:142%;font-family:"Arial",sans-serif;
+color:#333333'>RED: </span></b><span style='font-size:10.0pt;line-height:142%;
+font-family:"Arial",sans-serif;color:#333333'>We begin by writing a test (or
+tests) that speicify what we expect our code to do. We run the test, to see it
+fail, and in doing so we ensure that our<b> </b>test won't be a false positive.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895811584'><span style='position:absolute;left:9px;top:-36px;
+width:7px;height:7px'><img width=7 height=7
+src="w6-study-guide_files/image020.jpg"></span></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:33.0pt;margin-bottom:
+0in;margin-left:20.0pt;margin-bottom:.0001pt;line-height:138%'><b><span
+style='font-size:10.0pt;line-height:138%;font-family:"Arial",sans-serif;
+color:#333333'>GREEN: </span></b><span style='font-size:10.0pt;line-height:
+138%;font-family:"Arial",sans-serif;color:#333333'>We write the minimum amount
+of code to get our test to pass. This step may take just a few moments, or a
+longer time depending on the<b> </b>complexity of the task.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895810560'><span style='position:absolute;left:9px;top:-37px;
+width:7px;height:7px'><img width=7 height=7
+src="w6-study-guide_files/image020.jpg"></span></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:2.0pt;margin-bottom:0in;
+margin-left:20.0pt;margin-bottom:.0001pt;line-height:152%'><b><span
+style='font-size:10.0pt;line-height:152%;font-family:"Arial",sans-serif;
+color:#333333'>REFACTOR: </span></b><span style='font-size:10.0pt;line-height:
+152%;font-family:"Arial",sans-serif;color:#333333'>The big advantage of test
+driven development is that it means we always have a set of tests that cover
+our codebase. This means that we<b> </b>can safely make changes to our code,
+and as long as our tests still pass, we can be confident that the changes did
+not break any functionality. This gives us the confidence to be able to
+constantly refactor and simplify our code - we include a refactor step after
+each time we add a passing test, but it isn't always necessary to make changes.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895809536'><span style='position:absolute;left:9px;top:-87px;
+width:7px;height:7px'><img width=7 height=7
+src="w6-study-guide_files/image020.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:6.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;font-family:"Arial",sans-serif;
+color:#333333'>2. Identify the definitions of SyntaxError, ReferenceError, and
+TypeError</span></b></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:absolute;
+z-index:-1895808512;margin-left:0px;margin-top:13px;width:904px;height:1px'><img
+width=904 height=1 src="w6-study-guide_files/image001.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:15.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:0in;
+margin-left:20.0pt;margin-bottom:.0001pt;line-height:143%'><b><span
+style='font-size:10.0pt;line-height:143%;font-family:"Arial",sans-serif;
+color:#333333'>SyntaxError: </span></b><span style='font-size:10.0pt;
+line-height:143%;font-family:"Arial",sans-serif;color:#333333'>These errors
+refer to problems with the<b> </b><i>syntax</i><b> </b>of our code, they
+usually refer to either missing or rogue characters that cause the compiler<b> </b>to
+be able to understand the code we are feeding it.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895807488'><span style='position:absolute;left:9px;top:-37px;
+width:7px;height:7px'><img width=7 height=7
+src="w6-study-guide_files/image020.jpg"></span></span></p>
+
+<p class=MsoNormal style='margin-left:20.0pt'><b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;color:#333333'>ReferenceError: </span></b><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif;color:#333333'>These
+errors refer to times in our code where we reference a variable that is<b> </b><i>not</i><b>
+</b>available in the current scope.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895806464'><span style='position:absolute;left:9px;top:-9px;
+width:7px;height:7px'><img width=7 height=7
+src="w6-study-guide_files/image020.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:3.5pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:8.0pt;margin-bottom:0in;
+margin-left:20.0pt;margin-bottom:.0001pt;line-height:177%'><b><span
+style='font-size:10.0pt;line-height:177%;font-family:"Arial",sans-serif;
+color:#333333'>TypeError: </span></b><span style='font-size:10.0pt;line-height:
+177%;font-family:"Arial",sans-serif;color:#333333'>These errors refer to times
+in our code where we reference a variable of the<b> </b><i>wrong type</i>.
+Modifying a value that cannot be changed, using a<b> </b>value in an
+inappropriate way, or an argument of an unexpected type being passed to a
+function, are all causes of TypeErrors.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895805440'><span style='position:absolute;left:9px;top:-48px;
+width:7px;height:7px'><img width=7 height=7
+src="w6-study-guide_files/image020.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:2.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;font-family:"Arial",sans-serif;
+color:#333333'>3. Create, modify, and get to pass a suite of Mocha tests</span></b></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:absolute;
+z-index:-1895804416;margin-left:0px;margin-top:14px;width:904px;height:1px'><img
+width=904 height=1 src="w6-study-guide_files/image001.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:16.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#333333'>A minimal example:</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:absolute;
+z-index:-1895803392;margin-left:0px;margin-top:28px;width:204px;height:20px'><img
+width=204 height=20 src="w6-study-guide_files/image021.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.25pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:4.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>test/reverse-string.spec.js</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:absolute;
+z-index:-1895802368;margin-left:0px;margin-top:25px;width:904px;height:253px'><img
+width=904 height=253 src="w6-study-guide_files/image022.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:14.6pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>const </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>assert =<b>
+</b></span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#0086B3'>require</span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#333333'>(</span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#DD1144'>&quot;assert&quot;</span><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>const </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>reverseString
+=<b> </b></span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#0086B3'>require</span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#333333'>(</span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#DD1144'>'../lib/reverse-string'</span><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>).reverseString;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:19.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>describe(</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;reverseString&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>, () =&gt;
+{</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>it(</span><span style='font-size:
+9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;should reverse simple
+strings&quot;</span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#333333'>, () =&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>assert.equal(reverseString(</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;fun&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>), </span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;nuf&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>});</span></p>
+
+<p class=MsoNormal style='line-height:2.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:267.0pt;margin-bottom:
+0in;margin-left:60.0pt;margin-bottom:.0001pt;text-indent:-21.5pt;line-height:
+122%'><span style='font-size:9.0pt;line-height:122%;font-family:"Arial",sans-serif;
+color:#333333'>it(</span><span style='font-size:9.0pt;line-height:122%;
+font-family:"Arial",sans-serif;color:#DD1144'>&quot;should throw a TypeError if
+it doesn't receive a string&quot;</span><span style='font-size:9.0pt;
+line-height:122%;font-family:"Arial",sans-serif;color:#333333'>, () =&gt; {
+assert.throws(() =&gt; reverseString(</span><span style='font-size:9.0pt;
+line-height:122%;font-family:"Arial",sans-serif;color:teal'>0</span><span
+style='font-size:9.0pt;line-height:122%;font-family:"Arial",sans-serif;
+color:#333333'>));</span></p>
+
+<p class=MsoNormal style='line-height:.3pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>});</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>});</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:absolute;
+z-index:-1895801344;margin-left:0px;margin-top:47px;width:161px;height:20px'><img
+width=161 height=20 src="w6-study-guide_files/image023.jpg"></span></p>
+
+</div>
+
+<span style='font-size:11.0pt;font-family:"Times New Roman",serif'><br
+clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection9>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:17.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:4.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>lib/reverse-string.js</span></p>
+
+</div>
+
+<span style='font-size:11.0pt;font-family:"Times New Roman",serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection10>
+
+<p class=MsoNormal style='line-height:2.2pt'><span style='position:absolute;
+z-index:-1895800320;margin-left:76px;margin-top:76px;width:904px;height:219px'><img
+width=904 height=219 src="w6-study-guide_files/image024.jpg"></span><a
+name=page7></a></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>const </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>reverseString
+= (str) =&gt; {</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>if </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>(<b>typeof
+</b>str !==<b> </b></span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#DD1144'>&quot;string&quot;</span><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>) {</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:60.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>throw new </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#0086B3'>TypeError</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>(</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;expecting
+a string arg&quot;</span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:3.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>}</span></p>
+
+<p class=MsoNormal style='line-height:1.6pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><b><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>return </span></b><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>&quot;nuf&quot;</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>;</span></p>
+
+<p class=MsoNormal style='line-height:3.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>}</span></p>
+
+<p class=MsoNormal style='line-height:15.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#0086B3'>module</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>.exports =
+{</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:39.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>reverseString</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>}</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:14.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-right:34.0pt;line-height:185%'><span
+style='font-size:10.0pt;line-height:185%;font-family:"Arial",sans-serif;
+color:#333333'>This minimal example also shows the importance of thorough
+testing. Though all tests here pass, it would be trivial to come up with a case
+where our reverseString implementation doesn't do what we want. </span><span
+style='font-size:9.0pt;line-height:185%;font-family:"Arial",sans-serif;
+color:#333333'>reverseString('foo')</span><span style='font-size:10.0pt;
+line-height:185%;font-family:"Arial",sans-serif;color:#333333'> for example.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895799296'><span style='position:absolute;left:322px;top:-35px;
+width:153px;height:20px'><img width=153 height=20
+src="w6-study-guide_files/image025.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:2.85pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:65.0pt;margin-bottom:
+0in;margin-left:0in;margin-bottom:.0001pt;text-indent:0in;line-height:137%'><b><span
+style='font-size:18.0pt;line-height:137%;font-family:"Arial",sans-serif;
+color:#333333'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:18.0pt;line-height:137%;font-family:"Arial",sans-serif;
+color:#333333'>Use Chai to structure your tests using behavior-driven
+development principles</span></b></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895798272'><span style='position:absolute;left:0px;top:-6px;
+width:904px;height:1px'><img width=904 height=1
+src="w6-study-guide_files/image001.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:11.5pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#333333'>Chai gives us the human-readable verbage that have become
+popular in the BDD (Behavior Driven Developement) world:</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:absolute;
+z-index:-1895797248;margin-left:0px;margin-top:26px;width:904px;height:356px'><img
+width=904 height=356 src="w6-study-guide_files/image026.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:11.5pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#333333'>Both the </span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#333333'>should</span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#333333'> and </span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;
+color:#333333'>expect</span><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#333333'> style assertion terminology are considered BDD style, while the
+</span><span style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>assert</span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif;color:#333333'> style
+expressions are a throwback to TDD style.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895796224'><span style='position:absolute;left:52px;top:-15px;
+width:133px;height:20px'><img width=133 height=20
+src="w6-study-guide_files/image027.jpg"></span></span><span style='position:
+relative;z-index:-1895795200'><span style='position:absolute;left:554px;
+top:-15px;width:53px;height:20px'><img width=53 height=20
+src="w6-study-guide_files/image028.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:16.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:18.0pt;font-family:"Arial",sans-serif;
+color:#333333'>5. Use the pre- and post-test hooks provided by Mocha</span></b></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:absolute;
+z-index:-1895794176;margin-left:0px;margin-top:15px;width:904px;height:1px'><img
+width=904 height=1 src="w6-study-guide_files/image001.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:16.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+color:#333333'>Mocha provides four pre and post test hooks. These should be
+used to set up preconditions and clean up after your tests.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:absolute;
+z-index:-1895793152;margin-left:0px;margin-top:26px;width:904px;height:375px'><img
+width=904 height=375 src="w6-study-guide_files/image029.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:16.2pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>describe(</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#DD1144'>'hooks'</span><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#333333'>, <b>function</b>()
+{</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:28.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>before(<b>function</b>() {</span></p>
+
+<p class=MsoNormal style='line-height:3.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:55.0pt;text-indent:-16.45pt'><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>//<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>runs once
+before the first test in this block</span></i></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><i><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#999988'>&nbsp;</span></i></p>
+
+<p class=MsoNormal style='margin-left:28.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>});</span></p>
+
+<p class=MsoNormal style='line-height:14.6pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:28.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>after(<b>function</b>() {</span></p>
+
+<p class=MsoNormal style='line-height:3.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:55.0pt;text-indent:-16.45pt'><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>//<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>runs once
+after the last test in this block</span></i></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><i><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#999988'>&nbsp;</span></i></p>
+
+<p class=MsoNormal style='margin-left:28.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>});</span></p>
+
+<p class=MsoNormal style='line-height:14.6pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:28.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>beforeEach(<b>function</b>() {</span></p>
+
+<p class=MsoNormal style='line-height:3.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:55.0pt;text-indent:-16.45pt'><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>//<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>runs
+before each test in this block</span></i></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><i><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#999988'>&nbsp;</span></i></p>
+
+<p class=MsoNormal style='margin-left:28.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>});</span></p>
+
+<p class=MsoNormal style='line-height:14.6pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:28.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>afterEach(<b>function</b>() {</span></p>
+
+<p class=MsoNormal style='line-height:3.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:55.0pt;text-indent:-16.45pt'><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>//<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>runs after
+each test in this block</span></i></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><i><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#999988'>&nbsp;</span></i></p>
+
+<p class=MsoNormal style='margin-left:28.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>});</span></p>
+
+<p class=MsoNormal style='line-height:15.65pt'><i><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#999988'>&nbsp;</span></i></p>
+
+<p class=MsoNormal style='margin-left:44.0pt;text-indent:-16.2pt'><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>//<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><i><span
+style='font-size:9.0pt;font-family:"Arial",sans-serif;color:#999988'>test cases</span></i></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:17.0pt'><span style='font-size:9.0pt;
+font-family:"Arial",sans-serif;color:#333333'>});</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:14.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:186%'><span style='font-size:10.0pt;
+line-height:186%;font-family:"Arial",sans-serif;color:#333333'>Hooks <i>run in
+the order they are defined</i>, as appropriate; all </span><span
+style='font-size:9.0pt;line-height:186%;font-family:"Arial",sans-serif;
+color:#333333'>before()</span><span style='font-size:10.0pt;line-height:186%;
+font-family:"Arial",sans-serif;color:#333333'> hooks run (once), then any </span><span
+style='font-size:9.0pt;line-height:186%;font-family:"Arial",sans-serif;
+color:#333333'>beforeEach()</span><span style='font-size:10.0pt;line-height:
+186%;font-family:"Arial",sans-serif;color:#333333'> hooks, tests, any </span><span
+style='font-size:9.0pt;line-height:186%;font-family:"Arial",sans-serif;
+color:#333333'>afterEach()</span><span style='font-size:10.0pt;line-height:
+186%;font-family:"Arial",sans-serif;color:#333333'> hooks, and finally </span><span
+style='font-size:9.0pt;line-height:186%;font-family:"Arial",sans-serif;
+color:#333333'>after()</span><span style='font-size:10.0pt;line-height:186%;
+font-family:"Arial",sans-serif;color:#333333'> hooks (once).</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895792128'><span style='position:absolute;left:339px;top:-57px;
+width:67px;height:20px'><img width=67 height=20
+src="w6-study-guide_files/image030.jpg"></span></span><span style='position:
+relative;z-index:-1895791104'><span style='position:absolute;left:565px;
+top:-57px;width:96px;height:20px'><img width=96 height=20
+src="w6-study-guide_files/image031.jpg"></span></span><span style='position:
+relative;z-index:-1895790080'><span style='position:absolute;left:766px;
+top:-57px;width:89px;height:20px'><img width=89 height=20
+src="w6-study-guide_files/image032.jpg"></span></span><span style='position:
+relative;z-index:-1895789056'><span style='position:absolute;left:61px;
+top:-35px;width:60px;height:20px'><img width=60 height=20
+src="w6-study-guide_files/image033.jpg"></span></span></p>
+
+</div>
+
+</body>
+
+</html>

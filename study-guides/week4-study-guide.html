@@ -1,0 +1,2818 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/w11.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/mdn-article.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/markdown-to-html-style.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/mdn-article.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/medium-basic-export.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/mono-blue.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/monokai-sublime.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/monokai.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/notion.css"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+    <script>
+      $( document ).ready( function ( $ ) {
+
+        $( 'img' ).each( function () {
+          $( this ).removeAttr( 'style' )
+
+        } );
+
+      } );
+      $( function () {
+        $( 'img' ).removeAttr( "style" );
+      } );
+      $( document ).ready( function ( $ ) {
+        $( 'img' ).each( function () {
+          $( this ).removeAttr( 'style' )
+          $( this ).hide();
+        } );
+      } );
+    </script>
+    <script async defer src="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/jquery.js"></script>
+    <script async defer src="https://cdn.jsdelivr.net/gh/bgoonz/GIT-CDN-FILES/jquery-ui.js"></script>
+    <style>
+      p.MsoNormal,
+      li.MsoNormal,
+      div.MsoNormal {
+    
+        font-size: 16.0pt;
+        font-family: "Times New Roman", serif;
+      }
+    
+      /* 
+        @page WordSection1 {
+          size: 11.0in 17.0in;
+          margin: 32.15pt 1.0in 0in 34.0pt;
+        }
+    
+    
+        @page WordSection2 {
+          size: 11.0in 17.0in;
+          margin: 32.15pt 1.0in 0in 34.0pt;
+        }
+    
+    
+        @page WordSection3 {
+          size: 11.0in 1224.9pt;
+          margin: 28.5pt 1.0in 0in 34.0pt;
+        }
+    
+        @page WordSection4 {
+          size: 11.0in 1224.9pt;
+          margin: 28.5pt 1.0in 0in 34.0pt;
+        }
+    
+    
+    
+        @page WordSection5 {
+          size: 11.0in 1228.45pt;
+          margin: 39.9pt 1.0in 0in 34.0pt;
+        }
+    
+    
+        @page WordSection6 {
+          size: 11.0in 1228.45pt;
+          margin: 39.9pt 1.0in 0in 34.0pt;
+        }
+    
+    
+    
+        @page WordSection7 {
+          size: 11.0in 1227.9pt;
+          margin: 39.9pt 1.0in 0in 34.0pt;
+        }
+    
+    
+        @page WordSection8 {
+          size: 11.0in 17.0in;
+          margin: 27.9pt 1.0in 2.65pt 34.0pt;
+        }
+    
+    
+    
+        @page WordSection9 {
+          size: 11.0in 17.0in;
+          margin: 39.9pt 42.0pt 0in 34.0pt;
+        }
+    
+    
+    
+        @page WordSection10 {
+          size: 11.0in 17.0in;
+          margin: 27.9pt 40.0pt .4pt 34.0pt;
+        }
+    
+    
+        @page WordSection11 {
+          size: 11.0in 17.0in;
+          margin: 27.9pt 40.0pt .4pt 34.0pt;
+        }
+    
+    
+        @page WordSection12 {
+          size: 11.0in 17.0in;
+          margin: 28.9pt 47.0pt 2.45pt 34.0pt;
+        }
+    
+    
+        @page WordSection13 {
+          size: 11.0in 17.0in;
+          margin: 28.9pt 47.0pt 2.45pt 34.0pt;
+        }
+    
+    
+    
+        @page WordSection14 {
+          size: 11.0in 17.0in;
+          margin: 39.9pt 59.0pt 6.2pt 34.0pt;
+        }
+    
+    
+    *{
+      line-height: normal;
+      line-gap-override: 1.0;
+    }
+        @page WordSection15 {
+          size: 11.0in 17.0in;
+          margin: 39.9pt 59.0pt 6.2pt 34.0pt;
+        }
+    
+    
+        @page WordSection16 {
+          size: 11.0in 1231.65pt;
+          margin: 39.9pt 1.0in 0in 34.0pt;
+        }
+    
+        @page WordSection17 {
+          size: 11.0in 1231.5pt;
+          margin: 27.9pt 69.0pt 0in 34.0pt;
+        } */
+      body {
+        background: #ccc;
+        box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072), 0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+        /* min-height: 10000px;  */
+        width: 80vw;
+        margin: 100px auto;
+        background: white;
+        border-radius: 5px;
+
+      }
+    
+      span+span {
+        margin-left: 20px !important;
+      }
+    </style>
+
+</head>
+
+<body lang=EN-US style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=97 height=12>
+ <tr>
+  <td valign=top align=left height=12 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:85%'><a name=page1></a><span
+  style='font-size:9.0pt;line-height:85%;font-family:Consolas;color:#333333'>Your
+  Computer</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=93 height=14>
+ <tr>
+  <td valign=top align=left height=14 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:82%'><b><span style='font-family:"Arial",sans-serif;
+  color:#333333'>Window API</span></b></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=92 height=12>
+ <tr>
+  <td valign=top align=left height=12 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:85%'><b><span style='font-size:9.0pt;
+  line-height:85%;font-family:Consolas;color:#333333'>The Internet</span></b></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=84 height=12>
+ <tr>
+  <td valign=top align=left height=12 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:85%'><b><span style='font-size:9.0pt;
+  line-height:85%;font-family:Consolas;color:#333333'>Data Center</span></b></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=99 height=12>
+ <tr>
+  <td valign=top align=left height=12 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:85%'><b><span style='font-size:9.0pt;
+  line-height:85%;font-family:Consolas;color:#333333'>&lt;--- Response</span></b></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=84 height=30>
+ <tr>
+  <td valign=top align=left height=30 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:107%'><b><span style='font-size:9.0pt;
+  line-height:107%;font-family:Consolas;color:#333333'>Click ---&gt; Browser</span></b></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=69 height=12>
+ <tr>
+  <td valign=top align=left height=12 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:85%'><b><span style='font-size:9.0pt;
+  line-height:85%;font-family:Consolas;color:#333333'>Page &lt;---</span></b></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=92 height=12>
+ <tr>
+  <td valign=top align=left height=12 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:85%'><b><span style='font-size:9.0pt;
+  line-height:85%;font-family:Consolas;color:#333333'>Request ---&gt;</span></b></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=133 height=12>
+ <tr>
+  <td valign=top align=left height=12 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:85%'><b><span style='font-size:9.0pt;
+  line-height:85%;font-family:Consolas;color:#333333'>Server &lt;----&gt; Data</span></b></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=209 height=14>
+ <tr>
+  <td valign=top align=left height=14 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:82%'><b><span style='font-family:"Arial",sans-serif;
+  color:#333333'>Request-Response Diagram</span></b></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=99 height=12>
+ <tr>
+  <td valign=top align=left height=12 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:85%'><b><span style='font-size:9.0pt;
+  line-height:85%;font-family:Consolas;color:#333333'>rendering it.</span></b></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=63 height=14>
+ <tr>
+  <td valign=top align=left height=14 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:82%'><b><span style='font-family:"Arial",sans-serif;
+  color:#333333'>browser.</span></b></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=132 height=38>
+ <tr>
+  <td valign=top align=left height=38 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:112%'><b><span style='font-family:"Arial",sans-serif;
+  color:#333333'>Browser Diagram </span></b><span style='font-family:"Arial",sans-serif;
+  color:#333333'>User Interface</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=13 height=14>
+ <tr>
+  <td valign=top align=left height=14 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:78%'><span style='font-size:11.5pt;
+  line-height:78%;font-family:"Arial",sans-serif;color:#333333'>v</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=263 height=38>
+ <tr>
+  <td valign=top align=left height=38 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:107%'><span style='font-size:11.5pt;
+  line-height:107%;font-family:"Arial",sans-serif;color:#333333'>Browser Engine
+  ---&gt; Data Persistence v</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=128 height=38>
+ <tr>
+  <td valign=top align=left height=38 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:107%'><span style='font-size:11.5pt;
+  line-height:107%;font-family:"Arial",sans-serif;color:#333333'>Rendering
+  Engine v v v</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=260 height=14>
+ <tr>
+  <td valign=top align=left height=14 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:82%'><span style='font-family:"Arial",sans-serif;
+  color:#333333'>Networking JS interpreter UI backend</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=345 height=14>
+ <tr>
+  <td valign=top align=left height=14 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:82%'><span style='font-family:"Arial",sans-serif;
+  color:#333333'>======================================</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=556 height=14>
+ <tr>
+  <td valign=top align=left height=14 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:78%'><span style='font-size:11.5pt;
+  line-height:78%;font-family:"Arial",sans-serif;color:#333333'>- </span><span
+  style='font-size:9.5pt;line-height:78%;font-family:Consolas;color:black'>User
+  Interface</span><span style='font-size:11.5pt;line-height:78%;font-family:
+  "Arial",sans-serif;color:#333333'> : everything in browser interface except
+  requested page content</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=492 height=14>
+ <tr>
+  <td valign=top align=left height=14 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:78%'><span style='font-size:11.5pt;
+  line-height:78%;font-family:"Arial",sans-serif;color:#333333'>- </span><span
+  style='font-size:9.5pt;line-height:78%;font-family:Consolas;color:black'>Browser
+  Engine</span><span style='font-size:11.5pt;line-height:78%;font-family:"Arial",sans-serif;
+  color:#333333'> : manages interactions btwen UI and rendering engine</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=519 height=14>
+ <tr>
+  <td valign=top align=left height=14 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:78%'><span style='font-size:11.5pt;
+  line-height:78%;font-family:"Arial",sans-serif;color:#333333'>- </span><span
+  style='font-size:9.5pt;line-height:78%;font-family:Consolas;color:black'>Rendering
+  Engine</span><span style='font-size:11.5pt;line-height:78%;font-family:"Arial",sans-serif;
+  color:#333333'> : renders requested page content, parsing HTML &amp; CSS</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=387 height=14>
+ <tr>
+  <td valign=top align=left height=14 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:78%'><span style='font-size:11.5pt;
+  line-height:78%;font-family:"Arial",sans-serif;color:#333333'>- </span><span
+  style='font-size:9.5pt;line-height:78%;font-family:Consolas;color:black'>Networking</span><span
+  style='font-size:11.5pt;line-height:78%;font-family:"Arial",sans-serif;
+  color:#333333'> : handles network calls, i.e. HTTP requests</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=319 height=14>
+ <tr>
+  <td valign=top align=left height=14 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:78%'><span style='font-size:11.5pt;
+  line-height:78%;font-family:"Arial",sans-serif;color:#333333'>- </span><span
+  style='font-size:9.5pt;line-height:78%;font-family:Consolas;color:black'>JS
+  Interpreter</span><span style='font-size:11.5pt;line-height:78%;font-family:
+  "Arial",sans-serif;color:#333333'> : parses &amp; executes JS code</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=563 height=14>
+ <tr>
+  <td valign=top align=left height=14 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:78%'><span style='font-size:11.5pt;
+  line-height:78%;font-family:"Arial",sans-serif;color:#333333'>- </span><span
+  style='font-size:9.5pt;line-height:78%;font-family:Consolas;color:black'>UI
+  Backend</span><span style='font-size:11.5pt;line-height:78%;font-family:"Arial",sans-serif;
+  color:#333333'> : used for drawing basic widgets, using operating system UI
+  methods</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=483 height=14>
+ <tr>
+  <td valign=top align=left height=14 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:78%'><span style='font-size:11.5pt;
+  line-height:78%;font-family:"Arial",sans-serif;color:#333333'>- </span><span
+  style='font-size:9.5pt;line-height:78%;font-family:Consolas;color:black'>Data
+  Persistence</span><span style='font-size:11.5pt;line-height:78%;font-family:
+  "Arial",sans-serif;color:#333333'> : persistence of data stored in browser,
+  i.e. cookies</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=413 height=30>
+ <tr>
+  <td valign=top align=left height=30 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:96%'><span style='font-size:10.0pt;
+  line-height:96%;font-family:Consolas;color:#333333'>- A browser's main role
+  in the request/response cycle is: 1. Parsing HTML, CSS, JS</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=521 height=12>
+ <tr>
+  <td valign=top align=left height=12 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:85%'><span style='font-size:9.0pt;
+  line-height:85%;font-family:Consolas;color:#333333'>2. Rendering that
+  information to the user by constructing a DOM tree and</span></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=263 height=90>
+ <tr>
+  <td valign=top align=left height=90 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:147%'><b><span style='font-size:20.0pt;
+  line-height:147%;font-family:"Arial",sans-serif;color:#333333'>Week 4 Study
+  Guide Notes</span></b></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=103 height=14>
+ <tr>
+  <td valign=top align=left height=14 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:78%'><b><span style='font-size:11.5pt;
+  line-height:78%;font-family:"Arial",sans-serif;color:#333333'>DOM vs BOM</span></b></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=708 height=38>
+ <tr>
+  <td valign=top align=left height=38 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:107%'><b><span style='font-size:11.5pt;
+  line-height:107%;font-family:"Arial",sans-serif;color:#333333'>- the </span></b><b><span
+  style='font-size:9.5pt;line-height:107%;font-family:Consolas;color:black'>Document
+  Object Model</span></b><b><span style='font-size:11.5pt;line-height:107%;
+  font-family:"Arial",sans-serif;color:#333333'> is the
+  hierarchy/representation of the objects that comprise a document on the web
+  (i.e. how all elements in a document are organized). The DOM is a part of the</span></b></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<div>
+
+<table cellspacing=0 cellpadding=0 hspace=0 vspace=0 width=668 height=14>
+ <tr>
+  <td valign=top align=left height=14 style='padding-top:0in;padding-right:
+  0in;padding-bottom:0in;padding-left:0in'>
+  <p class=MsoNormal style='line-height:79%'><b><span style='font-size:10.0pt;
+  line-height:79%;font-family:Consolas;color:#333333'>Browser Object Model </span></b><b><span
+  style='font-family:"Arial",sans-serif;color:#333333'>, the
+  hierarchy/representation of all browser objects associated with the web</span></b></p>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+</div>
+
+<span style='font-size:11.0pt;font-family:"Times New Roman",serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection2>
+
+<p class=MsoNormal style='margin-left:23.0pt;text-align:justify;text-justify:
+inter-ideograph;line-height:135%'><a name=page2></a><span style='font-size:
+11.5pt;line-height:135%;font-family:"Arial",sans-serif;color:#333333'>the </span><span
+style='font-size:9.5pt;line-height:135%;font-family:Consolas;color:black'>Window
+API</span><span style='font-size:11.5pt;line-height:135%;font-family:"Arial",sans-serif;
+color:#333333'> includes the methods and properties that you can use on the </span><span
+style='font-size:9.5pt;line-height:135%;font-family:Consolas;color:black'>window
+object</span><span style='font-size:11.5pt;line-height:135%;font-family:"Arial",sans-serif;
+color:#333333'> , the core of the </span><span style='font-size:9.5pt;
+line-height:135%;font-family:Consolas;color:black'>BOM</span><span
+style='font-size:11.5pt;line-height:135%;font-family:"Arial",sans-serif;
+color:#333333'> .</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895835136'><span style='position:absolute;left:15px;top:-39px;
+width:5px;height:5px'><img width=5 height=5
+src="week4-study-guide_files/image001.jpg"></span></span></p>
+
+<p class=MsoNormal style='margin-left:23.0pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>using the </span><span
+style='font-size:9.5pt;font-family:Consolas;color:black'>Window API</span><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'> to
+resize the browser window:</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895834112'><span style='position:absolute;left:15px;top:-9px;
+width:5px;height:5px'><img width=5 height=5
+src="week4-study-guide_files/image001.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:10.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#434443'>//opens a new window</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>newWindow </span><span style='font-size:
+10.0pt;font-family:Consolas;color:#A71D5D'>=</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'> window.</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#3A2D4F'>open</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>(</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#183691'>&quot;url&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>, </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>&quot;name&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>, </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>&quot;width=100,
+height=100&quot;</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#333333'>)</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#434443'>//resizes new window</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>newWindow.</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#3A2D4F'>resizeTo</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#0086B3'>500</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#0086B3'>500</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>)</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#434443'>//also resizes by given amount; use `-` to
+shrink</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>newWindow.</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#3A2D4F'>resizeBy</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>(xDelta, yDelta)</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.1pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:23.0pt;text-align:justify;text-justify:
+inter-ideograph;line-height:144%'><span style='font-size:11.5pt;line-height:
+144%;font-family:"Arial",sans-serif;color:#333333'>the </span><span
+style='font-size:9.5pt;line-height:144%;font-family:Consolas;color:black'>context</span><span
+style='font-size:11.5pt;line-height:144%;font-family:"Arial",sans-serif;
+color:#333333'> of an </span><span style='font-size:9.5pt;line-height:144%;
+font-family:Consolas;color:black'>anonymous function</span><span
+style='font-size:11.5pt;line-height:144%;font-family:"Arial",sans-serif;
+color:#333333'> fun in the browser will be the </span><span style='font-size:
+9.5pt;line-height:144%;font-family:Consolas;color:black'>window object</span><span
+style='font-size:11.5pt;line-height:144%;font-family:"Arial",sans-serif;
+color:#333333'> . Remember that every function has a context, which we can
+think of as which object OWNS the function, and context is most often
+determined by how a function is invoked.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895833088'><span style='position:absolute;left:15px;top:-68px;
+width:5px;height:5px'><img width=5 height=5
+src="week4-study-guide_files/image001.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:6.85pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif'>Running
+Scripts</span></b></p>
+
+<p class=MsoNormal style='line-height:16.45pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:23.0pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>Insert a script via a .js
+document into an .html document:</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895832064'><span style='position:absolute;left:15px;top:-9px;
+width:5px;height:5px'><img width=5 height=5
+src="week4-study-guide_files/image001.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:10.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>&lt;</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#304F2C'>html</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>&gt;</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>&lt;</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#304F2C'>head</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>&gt;</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:135.0pt;margin-bottom:
+0in;margin-left:31.0pt;margin-bottom:.0001pt;text-indent:21.5pt;line-height:
+116%'><span style='font-size:10.0pt;line-height:116%;font-family:Consolas;
+color:#333333'>&lt;</span><span style='font-size:10.0pt;line-height:116%;
+font-family:Consolas;color:#304F2C'>script</span><span style='font-size:10.0pt;
+line-height:116%;font-family:Consolas;color:#333333'> </span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#3A2D4F'>type</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#333333'>=&quot;</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#183691'>text/javascript</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#333333'>&quot;
+</span><span style='font-size:10.0pt;line-height:116%;font-family:Consolas;
+color:#3A2D4F'>src</span><span style='font-size:10.0pt;line-height:116%;
+font-family:Consolas;color:#333333'>=&quot;</span><span style='font-size:10.0pt;
+line-height:116%;font-family:Consolas;color:#183691'>dom-ready-script.js</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#333333'>&quot;&gt;&lt;/</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#304F2C'>script</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#333333'>&gt;
+&lt;/</span><span style='font-size:10.0pt;line-height:116%;font-family:Consolas;
+color:#304F2C'>head</span><span style='font-size:10.0pt;line-height:116%;
+font-family:Consolas;color:#333333'>&gt;</span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>&lt;</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#304F2C'>body</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>&gt;&lt;/</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#304F2C'>body</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#333333'>&gt;</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>&lt;</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#304F2C'>html</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>&gt;&lt;/</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#304F2C'>html</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#333333'>&gt;</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>&lt;/</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#304F2C'>html</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>&gt;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.1pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:42.0pt;margin-bottom:
+0in;margin-left:23.0pt;margin-bottom:.0001pt;line-height:153%'><span
+style='font-size:11.5pt;line-height:153%;font-family:"Arial",sans-serif;
+color:#333333'>Run the script on DOMContentLoaded (when the doc has been
+loaded, but without waiting for stylesheets, images, and subframes):</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895831040'><span style='position:absolute;left:15px;top:-45px;
+width:5px;height:5px'><img width=5 height=5
+src="week4-study-guide_files/image001.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:178.0pt;margin-bottom:
+0in;margin-left:52.0pt;margin-bottom:.0001pt;text-indent:-21.45pt;line-height:
+129%'><span style='font-size:9.0pt;line-height:129%;font-family:Consolas;
+color:#333333'>window.</span><span style='font-size:9.0pt;line-height:129%;
+font-family:Consolas;color:#3A2D4F'>addEventListener</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#183691'>&quot;DOMContentLoaded&quot;</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#333333'>,
+event </span><span style='font-size:9.0pt;line-height:129%;font-family:Consolas;
+color:#A71D5D'>=&gt;</span><span style='font-size:9.0pt;line-height:129%;
+font-family:Consolas;color:#333333'> { console.</span><span style='font-size:
+9.0pt;line-height:129%;font-family:Consolas;color:#3A2D4F'>log</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#183691'>&quot;This
+script loaded when the DOM was ready.&quot;</span><span style='font-size:9.0pt;
+line-height:129%;font-family:Consolas;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>});</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.1pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:23.0pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>Run the script on page load using
+window.onload (wait for EVERYTHING to load):</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895830016'><span style='position:absolute;left:15px;top:-8px;
+width:5px;height:5px'><img width=5 height=5
+src="week4-study-guide_files/image001.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:10.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>window.</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#3A2D4F'>onload</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>=</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'> () </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>=&gt;</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'> {</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:52.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>console.</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#3A2D4F'>log</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>(</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:74.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#183691'>&quot;This script loaded when all the
+resources and the DOM were ready.&quot;</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:52.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>};</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.1pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:23.0pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>Three ways to prevent script from
+running until page loads:</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895828992'><span style='position:absolute;left:15px;top:-8px;
+width:5px;height:5px'><img width=5 height=5
+src="week4-study-guide_files/image001.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:3.75pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:46.0pt;text-indent:-13.2pt'><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>Use </span><span
+style='font-size:9.5pt;font-family:Consolas;color:black'>DOMContentLoaded</span></p>
+
+<p class=MsoNormal style='line-height:4.7pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:46.0pt;text-indent:-13.2pt'><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>Place </span><span
+style='font-size:9.5pt;font-family:Consolas;color:black'>script tag</span><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'> at very
+bottom of HTML file</span></p>
+
+<p class=MsoNormal style='line-height:4.7pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:46.0pt;text-indent:-13.2pt'><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>Add
+attribute like </span><span style='font-size:9.5pt;font-family:Consolas;
+color:black'>async</span><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:#333333'> or </span><span style='font-size:9.5pt;font-family:Consolas;
+color:black'>defer</span></p>
+
+<p class=MsoNormal style='line-height:16.05pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:11.5pt;font-family:"Arial",sans-serif'>async
+vs defer</span></b></p>
+
+<p class=MsoNormal style='line-height:4.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:#333333'>- </span><span style='font-size:9.5pt;font-family:Consolas;
+color:black'>&lt;script&gt;</span><span style='font-size:11.5pt;font-family:
+"Arial",sans-serif;color:#333333'> without any attributes will pause HTML
+parsing, and a request will be made to fetch the file (if it</span></p>
+
+</div>
+
+<span style='font-size:11.0pt;font-family:"Times New Roman",serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection3>
+
+<p class=MsoNormal style='margin-left:.25pt'><a name=page3></a><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>is
+external). The script will be executed before parsing is resumed.</span></p>
+
+<p class=MsoNormal style='line-height:4.75pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:1.0pt;margin-bottom:0in;
+margin-left:.25pt;margin-bottom:.0001pt;text-indent:-.25pt;line-height:134%'><span
+style='font-size:11.5pt;line-height:134%;font-family:"Arial",sans-serif;
+color:#333333'>-<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:10.0pt;line-height:134%;font-family:Consolas'>async </span><span
+style='font-family:"Arial",sans-serif;color:#333333'>downloads the file during
+HTML parsing and will pause the HTML parser to execute it once it has</span><span
+style='font-size:10.0pt;line-height:134%;font-family:Consolas'> </span><span
+style='font-family:"Arial",sans-serif;color:#333333'>downloaded.</span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:10.25pt;text-indent:-10.25pt'><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp; </span></span><span
+style='font-size:10.0pt;font-family:Consolas'>defer </span><span
+style='font-family:"Arial",sans-serif;color:#333333'>downloads the file during
+HTML parsing, but will only execute it after the parser has completed.</span></p>
+
+<p class=MsoNormal style='line-height:4.4pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:7.25pt;text-indent:-7.25pt'><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>-<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>the
+standard is to use </span><span style='font-size:9.5pt;font-family:Consolas;
+color:black'>async</span><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:#333333'> , then </span><span style='font-size:9.5pt;font-family:Consolas;
+color:black'>defer</span><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:#333333'> .</span></p>
+
+<p class=MsoNormal style='line-height:16.05pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.25pt'><b><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif'>Cookies vs Web Storage API</span></b></p>
+
+<p class=MsoNormal style='line-height:16.45pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:23.25pt;line-height:135%'><span
+style='font-size:11.5pt;line-height:135%;font-family:"Arial",sans-serif;
+color:#333333'>Cookies - stores stateful info about a user, transfers data to
+server, under 4KB storage limit </span><span style='font-size:9.5pt;line-height:
+135%;font-family:Consolas;color:black'>sessionStorage </span><span
+style='font-family:"Arial",sans-serif;color:#333333'>- stores data only for a
+session, until browser window/tab is closed, does not transfer</span><span
+style='font-size:9.5pt;line-height:135%;font-family:Consolas;color:black'> </span><span
+style='font-family:"Arial",sans-serif;color:#333333'>data to server, 5MB
+storage limit.</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895827968'><span style='position:absolute;left:15px;top:-62px;
+width:5px;height:5px'><img width=5 height=5
+src="week4-study-guide_files/image001.jpg"></span></span><span
+style='position:relative;z-index:-1895826944'><span style='position:absolute;
+left:15px;top:-38px;width:5px;height:5px'><img width=5 height=5
+src="week4-study-guide_files/image001.jpg"></span></span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:29.0pt;margin-bottom:
+0in;margin-left:23.25pt;margin-bottom:.0001pt;text-indent:3.4pt;line-height:
+162%'><span style='font-size:10.0pt;line-height:162%;font-family:Consolas'>localStorage
+</span><span style='font-family:"Arial",sans-serif;color:#333333'>- stores data
+w/no expiration date, does not transfer data to server, deleted when</span><span
+style='font-size:10.0pt;line-height:162%;font-family:Consolas'> </span><span
+style='font-family:"Arial",sans-serif;color:#333333'>browser cache is cleared;
+maximum storage limit Create a cookie:</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895825920'><span style='position:absolute;left:15px;top:-47px;
+width:5px;height:5px'><img width=5 height=5
+src="week4-study-guide_files/image001.jpg"></span></span><span
+style='position:absolute;z-index:-1895824896;margin-left:15px;margin-top:0px;
+width:5px;height:5px'><img width=5 height=5
+src="week4-study-guide_files/image001.jpg"></span></p>
+
+<p class=MsoNormal style='line-height:17.55pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.25pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>const </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>firstCookie</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:
+10.0pt;font-family:Consolas;color:#183691'>&quot;favoriteCat=million&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>;</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.25pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>document.cookie </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#A71D5D'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'> firstCookie;</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.25pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>const </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>secondCookie</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:
+10.0pt;font-family:Consolas;color:#183691'>&quot;favoriteDog=bambi&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>;</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.25pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>document.cookie </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#A71D5D'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'> secondCookie;</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.25pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>document.cookie; </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#434443'>// Returns
+&quot;favoriteCat=million; favoriteDog=bambi&quot;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.1pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:23.25pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>Delete a cookie by setting a
+cookie's expiration date to the past (or delete in Developer Tools):</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895823872'><span style='position:absolute;left:15px;top:-8px;
+width:5px;height:5px'><img width=5 height=5
+src="week4-study-guide_files/image001.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:10.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:109.0pt;margin-bottom:
+0in;margin-left:41.25pt;margin-bottom:.0001pt;text-indent:-10.7pt;line-height:
+125%'><span style='font-size:10.0pt;line-height:125%;font-family:Consolas;
+color:#333333'>document.cookie </span><span style='font-size:10.0pt;line-height:
+125%;font-family:Consolas;color:#A71D5D'>=</span><span style='font-size:10.0pt;
+line-height:125%;font-family:Consolas;color:#333333'> </span><span
+style='font-size:10.0pt;line-height:125%;font-family:Consolas;color:#183691'>&quot;favoriteCat=;
+expires = Thu, 01 Jan 1970 00:00:00 GMT&quot;</span><span style='font-size:
+10.0pt;line-height:125%;font-family:Consolas;color:#333333'>; document.cookie; </span><span
+style='font-size:10.0pt;line-height:125%;font-family:Consolas;color:#434443'>//
+Returns &quot;favoriteDog=bambi&quot;</span></p>
+
+<p class=MsoNormal style='line-height:18.2pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:23.25pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>Create localStorage data:</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895822848'><span style='position:absolute;left:15px;top:-8px;
+width:5px;height:5px'><img width=5 height=5
+src="week4-study-guide_files/image001.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:10.15pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.25pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#434443'>//set new localStorage item</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.25pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>localStorage.</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#3A2D4F'>setItem</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>&quot;firstThing&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>, </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>&quot;firstValue&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.25pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#434443'>//retrieve that localStorage item</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.25pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>localSTorage.</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#3A2D4F'>getItem</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>&quot;firstThing&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.1pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:23.25pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>When to use the Web Storage API?</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895821824'><span style='position:absolute;left:15px;top:-9px;
+width:5px;height:5px'><img width=5 height=5
+src="week4-study-guide_files/image001.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:3.75pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:46.25pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>shopping cart</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895820800'><span style='position:absolute;left:46px;top:-8px;
+width:5px;height:5px'><img width=5 height=5
+src="week4-study-guide_files/image002.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:3.75pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:46.25pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>input data on forms</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895819776'><span style='position:absolute;left:46px;top:-9px;
+width:5px;height:5px'><img width=5 height=5
+src="week4-study-guide_files/image002.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:3.75pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:46.25pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>info on user i.e. preferences or
+buying habits</span></p>
+
+<p class=MsoNormal style='line-height:4.75pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:23.25pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>When to use cookies:</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895818752'><span style='position:absolute;left:15px;top:-9px;
+width:5px;height:5px'><img width=5 height=5
+src="week4-study-guide_files/image001.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:3.75pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:10.0pt;margin-bottom:
+0in;margin-left:46.25pt;margin-bottom:.0001pt;line-height:135%'><span
+style='font-size:11.5pt;line-height:135%;font-family:"Arial",sans-serif;
+color:#333333'>Session cookie, stores session info on user login/validation
+(lost once browser is closed unless you use a persistent cookie)</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895817728'><span style='position:absolute;left:46px;top:-39px;
+width:5px;height:5px'><img width=5 height=5
+src="week4-study-guide_files/image002.jpg"></span></span></p>
+
+<p class=MsoNormal style='margin-left:23.25pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>You can view cookies and web
+storage info with Developer Tools (inspect -&gt; Application tab).</span></p>
+
+<p class=MsoNormal style='line-height:1.0pt'><span style='position:relative;
+z-index:-1895816704'><span style='position:absolute;left:15px;top:-8px;
+width:5px;height:5px'><img width=5 height=5
+src="week4-study-guide_files/image001.jpg"></span></span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:10.3pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.25pt'><b><span style='font-size:20.0pt;
+font-family:"Arial",sans-serif'>Learning Objectives</span></b></p>
+
+</div>
+
+<span style='font-size:11.0pt;font-family:"Times New Roman",serif'><br
+clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection4>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.75pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.25pt'><i><span style='font-family:"Arial",sans-serif;
+color:#333333'>BROWSER BASICS &amp; STORAGE</span></i></p>
+
+</div>
+
+<span style='font-size:11.0pt;font-family:"Times New Roman",serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection5>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:33.0pt;margin-bottom:
+0in;margin-left:23.0pt;margin-bottom:.0001pt;text-indent:-13.2pt;line-height:
+126%'><a name=page4></a><span style='font-size:11.5pt;line-height:126%;
+font-family:"Arial",sans-serif;color:#333333'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:11.5pt;line-height:126%;font-family:"Segoe UI Symbol",sans-serif;
+color:#333333'>✓ </span><span style='font-size:11.5pt;line-height:126%;
+font-family:"Arial",sans-serif;color:#333333'>Explain the difference between
+BOM (browser object model) and the DOM (document object</span><span
+style='font-size:11.5pt;line-height:126%;font-family:"Segoe UI Symbol",sans-serif;
+color:#333333'> </span><span style='font-size:11.5pt;line-height:126%;
+font-family:"Arial",sans-serif;color:#333333'>model).</span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:23.0pt;text-indent:-13.2pt'><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;font-family:"Segoe UI Symbol",sans-serif;color:#333333'>✓
+</span><span style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>Given
+a diagram of all the different parts of the Browser, identify each part.</span></p>
+
+<p class=MsoNormal style='line-height:6.5pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:23.0pt;text-indent:-13.2pt'><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;font-family:"Segoe UI Symbol",sans-serif;color:#333333'>✓
+</span><span style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>Use
+the Window API to change the innerHeight of a user's window.</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:23.0pt;text-indent:-13.2pt'><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;font-family:"Segoe UI Symbol",sans-serif;color:#333333'>✓
+</span><span style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>Identify
+the context of an anonymous function running in the Browser (the window).</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:6.0pt;margin-bottom:0in;
+margin-left:23.0pt;margin-bottom:.0001pt;text-indent:-13.2pt;line-height:104%'><span
+style='font-size:11.5pt;line-height:104%;font-family:"Arial",sans-serif;
+color:#333333'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;line-height:104%;font-family:"Segoe UI Symbol",sans-serif;
+color:#333333'>✓ </span><span style='font-size:11.5pt;line-height:104%;
+font-family:"Arial",sans-serif;color:#333333'>Given a JS file and an HTML file,
+use a script tag to import the JS file and execute the code therin</span><span
+style='font-size:11.5pt;line-height:104%;font-family:"Segoe UI Symbol",sans-serif;
+color:#333333'> </span><span style='font-size:11.5pt;line-height:104%;
+font-family:"Arial",sans-serif;color:#333333'>when all elements on a page load
+(using DOMContentLoaded).</span></p>
+
+<p class=MsoNormal style='line-height:.05pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:23.0pt;text-indent:-13.2pt;line-height:
+117%'><span style='font-size:11.5pt;line-height:117%;font-family:"Arial",sans-serif;
+color:#333333'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;line-height:117%;font-family:"Segoe UI Symbol",sans-serif;
+color:#333333'>✓ </span><span style='font-size:11.5pt;line-height:117%;
+font-family:"Arial",sans-serif;color:#333333'>Given a JS file and an HTML file,
+use a script tag to import the JS file and execute the code therein</span><span
+style='font-size:11.5pt;line-height:117%;font-family:"Segoe UI Symbol",sans-serif;
+color:#333333'> </span><span style='font-size:11.5pt;line-height:117%;
+font-family:"Arial",sans-serif;color:#333333'>when the page loads.</span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:23.0pt;text-indent:-13.2pt'><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>7.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;font-family:"Segoe UI Symbol",sans-serif;color:#333333'>✓
+</span><span style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>Identify
+three ways to prevent JS code from executing until an entire HTML page is
+loaded.</span></p>
+
+<p class=MsoNormal style='line-height:6.5pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:23.0pt;text-indent:-13.2pt'><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>8.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;font-family:"Segoe UI Symbol",sans-serif;color:#333333'>✓
+</span><span style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>Label
+a diagram on the Request/Response cycle.</span></p>
+
+<p class=MsoNormal style='line-height:2.65pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:30.0pt;margin-bottom:
+0in;margin-left:23.0pt;margin-bottom:.0001pt;text-indent:-13.2pt;line-height:
+104%'><span style='font-size:11.5pt;line-height:104%;font-family:"Arial",sans-serif;
+color:#333333'>9.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;line-height:104%;font-family:"Segoe UI Symbol",sans-serif;
+color:#333333'>✓ </span><span style='font-size:11.5pt;line-height:104%;
+font-family:"Arial",sans-serif;color:#333333'>Explain the Browser's main role
+in the request/response cycle (1. Parsing HTML, CSS, JS; 2.</span><span
+style='font-size:11.5pt;line-height:104%;font-family:"Segoe UI Symbol",sans-serif;
+color:#333333'> </span><span style='font-size:11.5pt;line-height:104%;
+font-family:"Arial",sans-serif;color:#333333'>Rendering that information to the
+user by constructing a DOM tree and rendering it.)</span></p>
+
+<p class=MsoNormal style='line-height:.05pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:8.0pt;margin-bottom:0in;
+margin-left:23.0pt;margin-bottom:.0001pt;text-indent:-19.65pt;line-height:117%'><span
+style='font-size:11.5pt;line-height:117%;font-family:"Arial",sans-serif;
+color:#333333'>10.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;line-height:117%;font-family:"Segoe UI Symbol",sans-serif;
+color:#333333'>✓ </span><span style='font-size:11.5pt;line-height:117%;
+font-family:"Arial",sans-serif;color:#333333'>Given several detractors -
+identify which real-world situations could be implemented with the Web</span><span
+style='font-size:11.5pt;line-height:117%;font-family:"Segoe UI Symbol",sans-serif;
+color:#333333'> </span><span style='font-size:11.5pt;line-height:117%;
+font-family:"Arial",sans-serif;color:#333333'>Storage API (shopping cart, forms
+savings inputs, etc.).</span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:11.0pt;margin-bottom:
+0in;margin-left:23.0pt;margin-bottom:.0001pt;text-align:justify;text-justify:
+inter-ideograph;text-indent:-18.2pt;line-height:122%'><span style='font-size:
+11.5pt;line-height:122%;font-family:"Arial",sans-serif;color:#333333'>11.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;line-height:122%;font-family:"Segoe UI Symbol",sans-serif;
+color:#333333'>✓ </span><span style='font-size:11.5pt;line-height:122%;
+font-family:"Arial",sans-serif;color:#333333'>Given a website to visit that
+depends on cookies (like Amazon), students should be able to go to</span><span
+style='font-size:11.5pt;line-height:122%;font-family:"Segoe UI Symbol",sans-serif;
+color:#333333'> </span><span style='font-size:11.5pt;line-height:122%;
+font-family:"Arial",sans-serif;color:#333333'>that site, add something to their
+cart, and then delete that cooking using Chrome Developer tools in order to
+empty their cart.</span></p>
+
+<p class=MsoNormal style='line-height:.05pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:23.0pt;text-indent:-19.65pt'><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>12.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;font-family:"Segoe UI Symbol",sans-serif;color:#333333'>✓
+</span><span style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>Write
+JS to store the value &quot;I</span><span style='font-size:11.5pt;font-family:
+"Segoe UI Symbol",sans-serif;color:#333333'> </span><span style='font-size:
+11.5pt;font-family:"Segoe UI Emoji",sans-serif;color:#333333'>❤</span><span
+style='font-size:11.5pt;font-family:"Segoe UI Symbol",sans-serif;color:#333333'>
+</span><span style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>falafel&quot;
+with the eky &quot;eatz&quot; in the browser's local storage.</span></p>
+
+<p class=MsoNormal style='line-height:6.5pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:23.0pt;text-indent:-19.65pt'><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>13.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;font-family:"Segoe UI Symbol",sans-serif;color:#333333'>✓
+</span><span style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>Write
+JS to read the value stored in local storage for the key
+&quot;paper-trail&quot;.</span></p>
+
+<p class=MsoNormal style='line-height:13.15pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><i><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:#333333'>ELEMENT SELECTION</span></i></p>
+
+<p class=MsoNormal style='line-height:15.75pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:23.0pt;text-indent:-13.2pt;line-height:
+144%'><span style='font-size:11.5pt;line-height:144%;font-family:"Arial",sans-serif;
+color:#333333'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;line-height:144%;font-family:"Arial",sans-serif;
+color:#333333'>Given HTML that includes </span><span style='font-size:9.5pt;
+line-height:144%;font-family:Consolas;color:black'>&lt;div
+id=&quot;catch-me-if-you-can&gt;HI!&lt;/div&gt;</span><span style='font-size:
+11.5pt;line-height:144%;font-family:"Arial",sans-serif;color:#333333'> , write
+a JS statement that stores a reference to the HTMLDivElement with the id &quot;catch-me-if-you-can&quot;
+in a variable named &quot;divOfInterest&quot;.</span></p>
+
+<p class=MsoNormal style='line-height:3.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>let </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>divOfInterest</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:
+10.0pt;font-family:Consolas;color:#333333'>document.</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#3A2D4F'>getElementById</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>&quot;catch-me-if-you-can&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.1pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:9.0pt;margin-bottom:0in;
+margin-left:23.0pt;margin-bottom:.0001pt;text-indent:-13.2pt;line-height:144%'><span
+style='font-size:11.5pt;line-height:144%;font-family:"Arial",sans-serif;
+color:#333333'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;line-height:144%;font-family:"Arial",sans-serif;
+color:#333333'>Given HTML that includes seven SPAN elements each with the class
+&quot;cloudy&quot;, write a JS statement that stores a reference to a NodeList
+filled with references to the seven HTMLSpanElements in a variable named
+&quot;cloud</span></p>
+
+<p class=MsoNormal style='line-height:3.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>let </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>cloudyNodes</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:
+10.0pt;font-family:Consolas;color:#333333'>document.</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#3A2D4F'>querySelectorAll</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>&quot;span.cloudy&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.1pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:5.0pt;margin-bottom:0in;
+margin-left:23.0pt;margin-bottom:.0001pt;text-indent:-13.2pt;line-height:144%'><span
+style='font-size:11.5pt;line-height:144%;font-family:"Arial",sans-serif;
+color:#333333'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;line-height:144%;font-family:"Arial",sans-serif;
+color:#333333'>Given an HTML file with HTML, HEAD, TITLE, and BODY elements,
+create and reference a JS file that in which the JS will create and attach to
+the BODY element an H1 element with the id &quot;sleeping-giant&quot; with the
+content &quot;Jell-O, Burled!&quot;.</span></p>
+
+</div>
+
+<span style='font-size:11.0pt;font-family:"Times New Roman",serif'><br
+clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection6>
+
+<p class=MsoNormal style='line-height:2.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:9.0pt;
+font-family:Consolas;color:#333333'>&lt;</span><span style='font-size:9.0pt;
+font-family:Consolas;color:#304F2C'>script</span><span style='font-size:9.0pt;
+font-family:Consolas;color:#333333'> </span><span style='font-size:9.0pt;
+font-family:Consolas;color:#3A2D4F'>type</span><span style='font-size:9.0pt;
+font-family:Consolas;color:#333333'>=&quot;</span><span style='font-size:9.0pt;
+font-family:Consolas;color:#183691'>text/javascript</span><span
+style='font-size:9.0pt;font-family:Consolas;color:#333333'>&quot; </span><span
+style='font-size:9.0pt;font-family:Consolas;color:#3A2D4F'>src</span><span
+style='font-size:9.0pt;font-family:Consolas;color:#333333'>=&quot;</span><span
+style='font-size:9.0pt;font-family:Consolas;color:#183691'>location.file</span><span
+style='font-size:9.0pt;font-family:Consolas;color:#333333'>&quot;&gt;&lt;/</span><span
+style='font-size:9.0pt;font-family:Consolas;color:#304F2C'>script</span><span
+style='font-size:9.0pt;font-family:Consolas;color:#333333'>&gt;</span></p>
+
+</div>
+
+<span style='font-size:11.0pt;font-family:"Times New Roman",serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection7>
+
+<p class=MsoNormal style='margin-left:21.2pt'><a name=page5></a><span
+style='font-size:10.0pt;font-family:Consolas;color:#A71D5D'>let </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>newHeader</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#A71D5D'> = </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>document.</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#3A2D4F'>createElement</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>&quot;h1&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:21.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>newHeader.</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#3A2D4F'>setAttribute</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>&quot;id&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>, </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>&quot;sleeping-giant&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:21.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>newHeader.innerHTML </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#A71D5D'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>&quot;Jell-O,
+Burled!&quot;</span><span style='font-size:10.0pt;font-family:Consolas;
+color:#333333'>;</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:169.0pt;margin-bottom:
+0in;margin-left:21.2pt;margin-bottom:.0001pt;line-height:125%'><span
+style='font-size:10.0pt;line-height:125%;font-family:Consolas;color:#434443'>//const
+newContent = document.createTextNode(&quot;Jell-O, Burled!&quot;); </span><span
+style='font-size:10.0pt;line-height:125%;font-family:Consolas;color:#333333'>document.body.</span><span
+style='font-size:10.0pt;line-height:125%;font-family:Consolas;color:#3A2D4F'>appendChild</span><span
+style='font-size:10.0pt;line-height:125%;font-family:Consolas;color:#333333'>(newHeader);</span></p>
+
+<p class=MsoNormal style='line-height:18.2pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:7.0pt;margin-bottom:0in;
+margin-left:13.2pt;margin-bottom:.0001pt;text-indent:-13.2pt;line-height:144%'><span
+style='font-size:11.5pt;line-height:144%;font-family:"Arial",sans-serif;
+color:#333333'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;line-height:144%;font-family:"Arial",sans-serif;
+color:#333333'>Given an HTML file with HTML, HEAD, TITLE, SCRIPT, and BODY
+elements with the SCRIPT's SRC attribute referencing an empty JS file, write a
+script in the JS file to create a DIV element with the id
+&quot;lickable-frog&quot; and add it as the last child to the BODY element.</span></p>
+
+<p class=MsoNormal style='line-height:3.7pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:21.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>&lt;</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#304F2C'>script</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#3A2D4F'>type</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>=&quot;</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#183691'>text/javascript</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>&quot; </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#3A2D4F'>src</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>=&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>location.file</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>&quot;&gt;&lt;/</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#304F2C'>script</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>&gt;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:18.55pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:21.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>let </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>newDiv</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>document.</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#3A2D4F'>createElement</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>&quot;div&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:21.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>newDiv.</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#3A2D4F'>setAttribute</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#333333'>(</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#183691'>&quot;id&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>, </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>&quot;lickable-frog&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:21.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>document.body.</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#3A2D4F'>appendChild</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>(newDiv);</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.1pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:13.2pt;text-indent:-13.2pt;line-height:
+141%'><span style='font-size:11.5pt;line-height:141%;font-family:"Arial",sans-serif;
+color:#333333'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;line-height:141%;font-family:"Arial",sans-serif;
+color:#333333'>Given an HTML file with HTML, HEAD, TITLE, SCRIPT, and BODY
+elements with no SRC attribute on the SCRIPT element, write a script in the
+SCRIPT block to create a UL element with no id, create an LI element with the
+id &quot;dreamy-eyes, add the LI as a child to the UL element, and add the UL
+element as the first child of the BODY element.</span></p>
+
+<p class=MsoNormal style='line-height:4.1pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:21.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>&lt;</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#304F2C'>script</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#3A2D4F'>type</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>=&quot;</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#183691'>text/javascript</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>&quot;&gt;</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:42.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>let </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>newList</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>document.</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#3A2D4F'>createElement</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>&quot;ul&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:42.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>let </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>newItem</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>document.</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#3A2D4F'>createElement</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>&quot;li&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:42.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>newItem.</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#3A2D4F'>setAttribute</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#333333'>(</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#183691'>&quot;id&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>, </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>&quot;dreamy-eyes&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:42.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>newList.</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#3A2D4F'>appendChild</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#333333'>(newItem);</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:42.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>document.body.</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#3A2D4F'>prepend</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>(newList);</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:21.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>&lt;/</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#304F2C'>script</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>&gt;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.1pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:48.0pt;margin-bottom:
+0in;margin-left:13.2pt;margin-bottom:.0001pt;text-indent:-13.2pt;line-height:
+153%'><span style='font-size:11.5pt;line-height:153%;font-family:"Arial",sans-serif;
+color:#333333'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;line-height:153%;font-family:"Arial",sans-serif;
+color:#333333'>Write JS to add the CSS class &quot;i-got-loaded&quot; to the
+BODY element when the window fires the DOMContentLoaded event.</span></p>
+
+<p class=MsoNormal style='line-height:2.4pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:213.0pt;margin-bottom:
+0in;margin-left:37.2pt;margin-bottom:.0001pt;text-indent:-16.1pt;line-height:
+116%'><span style='font-size:10.0pt;line-height:116%;font-family:Consolas;
+color:#333333'>document.</span><span style='font-size:10.0pt;line-height:116%;
+font-family:Consolas;color:#3A2D4F'>addEventListener</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#183691'>&quot;DOMContentLoaded&quot;</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#333333'>,
+event </span><span style='font-size:10.0pt;line-height:116%;font-family:Consolas;
+color:#A71D5D'>=&gt;</span><span style='font-size:10.0pt;line-height:116%;
+font-family:Consolas;color:#333333'> { document.body.</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#3A2D4F'>className</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#183691'>&quot;i-got-loaded&quot;</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:21.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>});</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.1pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:13.0pt;margin-bottom:
+0in;margin-left:13.2pt;margin-bottom:.0001pt;text-indent:-13.2pt;line-height:
+153%'><span style='font-size:11.5pt;line-height:153%;font-family:"Arial",sans-serif;
+color:#333333'>7.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;line-height:153%;font-family:"Arial",sans-serif;
+color:#333333'>Given an HTML file with a UL element with the id
+&quot;your-best-friend&quot; that has six non-empty ILs as its children, write
+JS to write the content of each LI to the console.</span></p>
+
+<p class=MsoNormal style='line-height:2.4pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:186.0pt;margin-bottom:
+0in;margin-left:21.2pt;margin-bottom:.0001pt;line-height:116%'><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#A71D5D'>let
+</span><span style='font-size:10.0pt;line-height:116%;font-family:Consolas;
+color:#333333'>parentList</span><span style='font-size:10.0pt;line-height:116%;
+font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:10.0pt;
+line-height:116%;font-family:Consolas;color:#333333'>document.</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#3A2D4F'>getElementById</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#183691'>&quot;your-best-friend&quot;</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#333333'>);</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#A71D5D'>
+let </span><span style='font-size:10.0pt;line-height:116%;font-family:Consolas;
+color:#333333'>childNodes</span><span style='font-size:10.0pt;line-height:116%;
+font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:10.0pt;
+line-height:116%;font-family:Consolas;color:#333333'>parent.childNodes;</span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:21.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>for </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>(</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>let </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>value</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'> of </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>childNodes.</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#3A2D4F'>values</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#333333'>()) {</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:42.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>console.</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#3A2D4F'>log</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>(value);</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:21.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>}</span></p>
+
+</div>
+
+<span style='font-size:11.0pt;font-family:"Times New Roman",serif'><br
+clear=all style='page-break-before:auto'>
+</span>
+
+<div class=WordSection8>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.1pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:6.0pt;margin-bottom:0in;
+margin-left:13.2pt;margin-bottom:.0001pt;text-align:justify;text-justify:inter-ideograph;
+text-indent:-13.2pt;line-height:165%'><span style='font-family:"Arial",sans-serif;
+color:#333333'>8.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-family:"Arial",sans-serif;color:#333333'>Given an HTML file with a
+UL element with the id &quot;your-worst-enemy&quot; that has no children, write
+JS to construct a string that contains six LI tags each containing a random
+number and set the inner HTML</span></p>
+
+</div>
+
+<span style='font-size:11.0pt;font-family:"Times New Roman",serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection9>
+
+<p class=MsoNormal style='margin-left:23.0pt'><a name=page6></a><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>property
+of ul#your-worst-enemy to that string.</span></p>
+
+<p class=MsoNormal style='line-height:11.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>const </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#3A2D4F'>getRandomInt</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:
+10.0pt;font-family:Consolas;color:#333333'>max</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#A71D5D'> =&gt; </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>{</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:52.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>return </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>Math.</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#3A2D4F'>floor</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>(Math.</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#3A2D4F'>random</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>()</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'> * </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>Math.</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#3A2D4F'>floor</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>(max));</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>}</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>const </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>liArr</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>[];</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>for </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>(</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>let </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>i</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#0086B3'>0</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>, i</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'> &lt; </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#0086B3'>6</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>, i</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>++</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>) {</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:52.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>liArr.</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#3A2D4F'>push</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>(</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#183691'>&quot;&lt;li&gt;&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#A71D5D'>+</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#3A2D4F'>getRandomInt</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#0086B3'>10</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>) </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#A71D5D'>+</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>&quot;&lt;/li&gt;&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>)</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>}</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>const </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>liString</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>liArr.</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#3A2D4F'>join</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>(</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#183691'>&quot; &quot;</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>const </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>listElement</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:
+10.0pt;font-family:Consolas;color:#333333'>document.</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#3A2D4F'>getElementById</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>&quot;your-worst-enemy&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>)</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>listElement.innerHTML </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#A71D5D'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'> liString;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.1pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:27.0pt;margin-bottom:
+0in;margin-left:23.0pt;margin-bottom:.0001pt;text-indent:-13.2pt;line-height:
+153%'><span style='font-size:11.5pt;line-height:153%;font-family:"Arial",sans-serif;
+color:#333333'>9.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;line-height:153%;font-family:"Arial",sans-serif;
+color:#333333'>Write JS to update the title of the document to the current time
+at a reasonable interval such that it looks like a real clock.</span></p>
+
+<p class=MsoNormal style='line-height:2.4pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>&lt;</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#304F2C'>title</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#3A2D4F'>id</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>=&quot;</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#183691'>title</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>&quot;&gt;&lt;/</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#304F2C'>title</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>&gt;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:18.55pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>const </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>title</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>document.</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#3A2D4F'>getElementById</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>&quot;title&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>const </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#3A2D4F'>time</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>()</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'> =&gt; </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>{</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:52.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>const </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>date</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'> = new </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#3A2D4F'>Date</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>();</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:52.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>const </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>seconds</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>date.</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#3A2D4F'>getSeconds</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#333333'>();</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:52.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>const </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>minutes</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>date.</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#3A2D4F'>getMinutes</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#333333'>();</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:52.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>const </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>hours</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>date.</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#3A2D4F'>getHours</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>();</span></p>
+
+<p class=MsoNormal style='line-height:15.6pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:52.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>title.innerHTML </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#A71D5D'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>`</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>${hours}</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>:</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>${minutes}</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>:</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>${seconds}</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>`</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>};</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#3A2D4F'>setInterval</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#333333'>(time,</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#3A2D4F'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#0086B3'>1000</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.6pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><i><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:#333333'>EVENT HANDLING</span></i></p>
+
+<p class=MsoNormal style='line-height:15.75pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:10.0pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>1. Given an HTML page that
+includes</span></p>
+
+<p class=MsoNormal style='line-height:6.85pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:23.0pt;text-indent:3.4pt;line-height:
+146%'><span style='font-size:10.0pt;line-height:146%;font-family:Consolas'>&lt;button
+id=&quot;increment-count&quot;&gt;I have been clicked &lt;span
+id=&quot;clicked-count&quot;&gt;0&lt;/span&gt; times&lt;/button&gt; </span><span
+style='font-family:"Arial",sans-serif;color:#333333'>, write JS that increases
+the value of the content of </span><span style='font-size:9.5pt;line-height:
+146%;font-family:Consolas;color:black'>span#clicked-count</span><span
+style='font-family:"Arial",sans-serif;color:#333333'> by 1 every time </span><span
+style='font-size:9.5pt;line-height:146%;font-family:Consolas;color:black'>button#increment-count
+</span><span style='font-family:"Arial",sans-serif;color:#333333'>is clicked.</span></p>
+
+<p class=MsoNormal style='line-height:3.55pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>let </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>incrementButton</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#A71D5D'> = </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>document.</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#3A2D4F'>getElementById</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>&quot;increment-count&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>let </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>incrementSpan</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:
+10.0pt;font-family:Consolas;color:#333333'>document.</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#3A2D4F'>getElementById</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>&quot;clicked-count&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>let </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>count</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#0086B3'>0</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>incrementButton.</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#3A2D4F'>addEventListener</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>&quot;click&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>, event </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#A71D5D'>=&gt;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'> {</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:52.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>count</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>++</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:52.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>incrementSpan.innerHTML </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#A71D5D'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'> count</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>});</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.1pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:10.0pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>2. Given an HTML page that includes</span></p>
+
+<p class=MsoNormal style='line-height:4.75pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.25in;margin-bottom:0in;
+margin-left:23.0pt;margin-bottom:.0001pt;text-indent:3.4pt;line-height:149%'><span
+style='font-size:10.0pt;line-height:149%;font-family:Consolas'>&lt;input
+type=&quot;checkbox&quot; id=&quot;on-off&quot;&gt;&lt;div
+id=&quot;now-you-see-me&quot;&gt;Now you see me&lt;/div&gt; </span><span
+style='font-family:"Arial",sans-serif;color:#333333'>, write JS that</span><span
+style='font-size:10.0pt;line-height:149%;font-family:Consolas'> </span><span
+style='font-family:"Arial",sans-serif;color:#333333'>sets the display of
+div#now-you-see-me to &quot;none&quot; when input#on-off is checked and
+&quot;block&quot; when input#on-off is not checked.</span></p>
+
+</div>
+
+<span style='font-size:11.0pt;font-family:"Times New Roman",serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection10>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:215.0pt;margin-bottom:
+0in;margin-left:21.2pt;margin-bottom:.0001pt;line-height:116%'><a name=page7></a><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#A71D5D'>let
+</span><span style='font-size:10.0pt;line-height:116%;font-family:Consolas;
+color:#333333'>inputBox</span><span style='font-size:10.0pt;line-height:116%;
+font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:10.0pt;
+line-height:116%;font-family:Consolas;color:#333333'>document.</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#3A2D4F'>getElementById</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#183691'>&quot;checkbox&quot;</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#333333'>);</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#A71D5D'>
+let </span><span style='font-size:10.0pt;line-height:116%;font-family:Consolas;
+color:#333333'>divSee</span><span style='font-size:10.0pt;line-height:116%;
+font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:10.0pt;
+line-height:116%;font-family:Consolas;color:#333333'>document.</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#3A2D4F'>getElementById</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#183691'>&quot;now-you-see-me&quot;</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#333333'>);</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#A71D5D'> </span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#333333'>inputBox.</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#3A2D4F'>addEventListener</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#183691'>&quot;click&quot;</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#333333'>,
+event </span><span style='font-size:10.0pt;line-height:116%;font-family:Consolas;
+color:#A71D5D'>=&gt;</span><span style='font-size:10.0pt;line-height:116%;
+font-family:Consolas;color:#333333'> {</span></p>
+
+<p class=MsoNormal style='line-height:.15pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:42.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>if </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>(inputBox.checked) {</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:64.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>divSee.style.display </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#A71D5D'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>&quot;block&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>;</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:42.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>} </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>else</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'> {</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:64.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>divSee.style.display </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#A71D5D'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>&quot;none&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>;</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:42.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>};</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:21.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>});</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.1pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:13.2pt;text-indent:-13.2pt'><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>Given an
+HTML file that includes </span><span style='font-size:9.5pt;font-family:Consolas;
+color:black'>&lt;input id=&quot;stopper&quot; type=&quot;text&quot;
+placeholder=&quot;Quick! Type STOP&quot;&gt;</span><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'> ,</span></p>
+
+<p class=MsoNormal style='line-height:4.75pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:21.0pt;margin-bottom:
+0in;margin-left:13.2pt;margin-bottom:.0001pt;line-height:153%'><span
+style='font-size:11.5pt;line-height:153%;font-family:"Arial",sans-serif;
+color:#333333'>write JS that will change the background color of the page to
+cyan five seconds after a page loads unless the field input#stopper contains
+only the text &quot;STOP&quot;.</span></p>
+
+<p class=MsoNormal style='line-height:2.4pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:220.0pt;margin-bottom:
+0in;margin-left:21.2pt;margin-bottom:.0001pt;line-height:129%'><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#A71D5D'>let
+</span><span style='font-size:9.0pt;line-height:129%;font-family:Consolas;
+color:#333333'>inputStopper</span><span style='font-size:9.0pt;line-height:
+129%;font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:9.0pt;
+line-height:129%;font-family:Consolas;color:#333333'>document.</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#3A2D4F'>getElementById</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#183691'>&quot;stopper&quot;</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#333333'>);</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#A71D5D'>
+const </span><span style='font-size:9.0pt;line-height:129%;font-family:Consolas;
+color:#3A2D4F'>stopCyanMadness</span><span style='font-size:9.0pt;line-height:
+129%;font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:9.0pt;
+line-height:129%;font-family:Consolas;color:#333333'>()</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#A71D5D'>
+=&gt; </span><span style='font-size:9.0pt;line-height:129%;font-family:Consolas;
+color:#333333'>{</span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:42.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>if </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>(inputStopper.value</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#A71D5D'> !== </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>&quot;STOP&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>) {</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:64.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>document.body.style.backgroundColor </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#A71D5D'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>&quot;cyan&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>;</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:42.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>}</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:21.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>};</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:21.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#3A2D4F'>setTimeout</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#333333'>(stopCyanMadness,</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#3A2D4F'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#0086B3'>5000</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.1pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:8.0pt;margin-bottom:0in;
+margin-left:13.2pt;margin-bottom:.0001pt;text-indent:-13.2pt;line-height:144%'><span
+style='font-size:11.5pt;line-height:144%;font-family:"Arial",sans-serif;
+color:#333333'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;line-height:144%;font-family:"Arial",sans-serif;
+color:#333333'>Given an HTML page that includes </span><span style='font-size:
+9.5pt;line-height:144%;font-family:Consolas;color:black'>&lt;input type=”text”
+id=”fancypants”&gt;</span><span style='font-size:11.5pt;line-height:144%;
+font-family:"Arial",sans-serif;color:#333333'> , write JS that changes the
+background color of the textbox to #E8F5E9 when the caret is in the textbox and
+turns it back to its normal color when focus is elsewhere.</span></p>
+
+<p class=MsoNormal style='line-height:2.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:231.0pt;margin-bottom:
+0in;margin-left:21.2pt;margin-bottom:.0001pt;line-height:129%'><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#A71D5D'>const
+</span><span style='font-size:9.0pt;line-height:129%;font-family:Consolas;
+color:#333333'>input</span><span style='font-size:9.0pt;line-height:129%;
+font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:9.0pt;
+line-height:129%;font-family:Consolas;color:#333333'>document.</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#3A2D4F'>getElementById</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#183691'>&quot;fancypands&quot;</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#333333'>);</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#A71D5D'> </span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#333333'>input.</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#3A2D4F'>addEventListener</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#183691'>&quot;focus&quot;</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#333333'>,
+event </span><span style='font-size:9.0pt;line-height:129%;font-family:Consolas;
+color:#A71D5D'>=&gt;</span><span style='font-size:9.0pt;line-height:129%;
+font-family:Consolas;color:#333333'> {</span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:42.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>event.target.style.backgroundColor </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#A71D5D'>=</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'> </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>&quot;#E8F5E9&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>;</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:21.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>});</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:236.0pt;margin-bottom:
+0in;margin-left:42.2pt;margin-bottom:.0001pt;text-indent:-21.45pt;line-height:
+129%'><span style='font-size:9.0pt;line-height:129%;font-family:Consolas;
+color:#333333'>input.</span><span style='font-size:9.0pt;line-height:129%;
+font-family:Consolas;color:#3A2D4F'>addEventListener</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#183691'>&quot;blur&quot;</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#333333'>,
+event </span><span style='font-size:9.0pt;line-height:129%;font-family:Consolas;
+color:#A71D5D'>=&gt;</span><span style='font-size:9.0pt;line-height:129%;
+font-family:Consolas;color:#333333'> { event.target.style.backgroundColor </span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#A71D5D'>=</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#333333'> </span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#183691'>&quot;initial&quot;</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#333333'>;</span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:21.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>})</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.1pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:.25in;margin-bottom:0in;
+margin-left:13.2pt;margin-bottom:.0001pt;text-indent:-13.2pt;line-height:153%'><span
+style='font-size:11.5pt;line-height:153%;font-family:"Arial",sans-serif;
+color:#333333'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;line-height:153%;font-family:"Arial",sans-serif;
+color:#333333'>Given an HTML page that includes a form with two password fields,
+write JS that subscribes to the forms submission event and cancels it if the
+values in the two password fields differ.</span></p>
+
+<p class=MsoNormal style='line-height:2.4pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:226.0pt;margin-bottom:
+0in;margin-left:21.2pt;margin-bottom:.0001pt;line-height:129%'><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#A71D5D'>let
+</span><span style='font-size:9.0pt;line-height:129%;font-family:Consolas;
+color:#333333'>form</span><span style='font-size:9.0pt;line-height:129%;
+font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:9.0pt;
+line-height:129%;font-family:Consolas;color:#333333'>document.</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#3A2D4F'>getElementById</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#183691'>&quot;signup-form&quot;</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#333333'>);</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#A71D5D'>
+let </span><span style='font-size:9.0pt;line-height:129%;font-family:Consolas;
+color:#333333'>passwordOne</span><span style='font-size:9.0pt;line-height:129%;
+font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:9.0pt;
+line-height:129%;font-family:Consolas;color:#333333'>document.</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#3A2D4F'>getElementById</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#333333'>(&quot;password);</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#A71D5D'>
+let </span><span style='font-size:9.0pt;line-height:129%;font-family:Consolas;
+color:#333333'>passwordTwo</span><span style='font-size:9.0pt;line-height:129%;
+font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:9.0pt;
+line-height:129%;font-family:Consolas;color:#333333'>document.</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#3A2D4F'>getElementById</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#333333'>(&quot;password);</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#A71D5D'> </span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#333333'>form.</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#3A2D4F'>addEventListener</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#183691'>&quot;submit&quot;</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#333333'>,
+event </span><span style='font-size:9.0pt;line-height:129%;font-family:Consolas;
+color:#A71D5D'>=&gt;</span><span style='font-size:9.0pt;line-height:129%;
+font-family:Consolas;color:#333333'> {</span></p>
+
+<p class=MsoNormal style='line-height:.15pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:42.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>if </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>(passwordOne.value</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#A71D5D'> !== </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>passwordTwo.value)
+{</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:64.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>event.</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#3A2D4F'>preventDefault</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>();</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:64.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#3A2D4F'>alert</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>(</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#183691'>&quot;Passwords must match!&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:42.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>} </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#A71D5D'>else</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'> {</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:64.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#3A2D4F'>alert</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>(</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#183691'>&quot;The form was submitted!&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>);</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:42.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>}</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:21.2pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>})</span></p>
+
+</div>
+
+<span style='font-size:11.0pt;font-family:"Times New Roman",serif'><br
+clear=all style='page-break-before:always'>
+</span>
+
+<div class=WordSection11>
+
+<p class=MsoNormal style='margin-left:23.0pt;text-indent:-13.2pt;line-height:
+135%'><a name=page8></a><span style='font-size:11.5pt;line-height:135%;
+font-family:"Arial",sans-serif;color:#333333'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-size:11.5pt;line-height:135%;font-family:"Arial",sans-serif;
+color:#333333'>Given an HTML page that includes a div styled as a square with a
+red background, write JS that allows a user to draf the square around the
+screen.</span></p>
+
+<p class=MsoNormal style='margin-left:46.0pt;text-indent:-13.2pt'><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>Mark the
+element as draggable:</span></p>
+
+<p class=MsoNormal style='line-height:11.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:.75in'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>&lt;</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#304F2C'>div</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'> </span><span style='font-size:10.0pt;
+font-family:Consolas;color:#3A2D4F'>id</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>=&quot;</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#183691'>red-square</span><span style='font-size:
+10.0pt;font-family:Consolas;color:#333333'>&quot; </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#3A2D4F'>draggable</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>=&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>true</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>&quot;&gt;&lt;/</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#304F2C'>div</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>&gt;</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.1pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:22.0pt;margin-bottom:
+0in;margin-left:23.0pt;margin-bottom:.0001pt;text-indent:-13.2pt;line-height:
+153%'><span style='font-size:11.5pt;line-height:153%;font-family:"Arial",sans-serif;
+color:#333333'>7.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;line-height:153%;font-family:"Arial",sans-serif;
+color:#333333'>Given HTML page that has 300 DIVs, create one click event
+subscription that will print the id of the element clicked on to the console.</span></p>
+
+<p class=MsoNormal style='line-height:2.4pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>document.body.</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#3A2D4F'>addEventListener</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#183691'>&quot;click&quot;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'>, event </span><span
+style='font-size:10.0pt;font-family:Consolas;color:#A71D5D'>=&gt;</span><span
+style='font-size:10.0pt;font-family:Consolas;color:#333333'> {</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:52.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>console.</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#3A2D4F'>log</span><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>(event.target.id);</span></p>
+
+<p class=MsoNormal style='line-height:1.95pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:31.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#333333'>})</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.1pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:23.0pt;text-indent:-13.2pt'><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>8.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>Identify
+the definition of the bubbling principle.</span></p>
+
+<p class=MsoNormal style='line-height:4.7pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:13.0pt;margin-bottom:
+0in;margin-left:23.0pt;margin-bottom:.0001pt;line-height:153%'><span
+style='font-size:11.5pt;line-height:153%;font-family:"Arial",sans-serif;
+color:#333333'>When an event happens on an element, it first runs the handlers
+on it, then on its parent, then all the way up on other ancestors.</span></p>
+
+<p class=MsoNormal style='line-height:7.25pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal><i><span style='font-size:11.5pt;font-family:"Arial",sans-serif;
+color:#333333'>JSON</span></i></p>
+
+<p class=MsoNormal style='line-height:15.75pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:261.0pt;margin-bottom:
+0in;margin-left:23.0pt;margin-bottom:.0001pt;text-indent:-13.2pt;line-height:
+135%'><span style='font-size:11.5pt;line-height:135%;font-family:"Arial",sans-serif;
+color:#333333'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;line-height:135%;font-family:"Arial",sans-serif;
+color:#333333'>Identify and generate valid JSON-formatted strings. String in
+JS: </span><span style='font-size:9.5pt;line-height:135%;font-family:Consolas;
+color:black'>'this is &quot;text&quot;'</span></p>
+
+<p class=MsoNormal style='margin-left:23.0pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>String in JSON: </span><span
+style='font-size:9.5pt;font-family:Consolas;color:black'>&quot;this is
+\&quot;text\&quot;&quot;</span></p>
+
+<p class=MsoNormal style='line-height:4.7pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:34.0pt'><span style='font-size:.5pt;
+font-family:"Arial",sans-serif;color:#333333'><img width=5 height=5
+id="Picture 20" src="week4-study-guide_files/image002.jpg"></span><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>  use \n
+for line breaks</span></p>
+
+<p class=MsoNormal style='line-height:4.7pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:34.0pt'><span style='font-size:.5pt;
+font-family:"Arial",sans-serif;color:#333333'><img width=5 height=5
+id="Picture 21" src="week4-study-guide_files/image002.jpg"></span><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>  keys in
+JSON objects must be surrounded by &quot; quotes</span></p>
+
+<p class=MsoNormal style='line-height:4.7pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:23.0pt;text-indent:-13.2pt'><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>Use </span><span
+style='font-size:9.5pt;font-family:Consolas;color:black'>JSON.parse</span><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'> to
+deserialize JSON-formatted strings.</span></p>
+
+<p class=MsoNormal style='line-height:11.15pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:224.0pt;margin-bottom:
+0in;margin-left:31.0pt;margin-bottom:.0001pt;line-height:129%'><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#A71D5D'>const
+</span><span style='font-size:9.0pt;line-height:129%;font-family:Consolas;
+color:#333333'>str</span><span style='font-size:9.0pt;line-height:129%;
+font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:9.0pt;
+line-height:129%;font-family:Consolas;color:#183691'>'[1,&quot;hello,
+\\&quot;world\\&quot;&quot;,3.14,{&quot;id&quot;:17}]'</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#333333'>;</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#A71D5D'> </span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#333333'>console.</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#3A2D4F'>log</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#0086B3'>JSON</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#333333'>.</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#3A2D4F'>parse</span><span
+style='font-size:9.0pt;line-height:129%;font-family:Consolas;color:#333333'>(str));</span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:68.0pt;text-indent:-15.95pt'><span
+style='font-size:10.0pt;font-family:Consolas;color:#434443'>//<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:10.0pt;font-family:Consolas;color:#434443'>prints an array
+with the following entries:</span></p>
+
+<p class=MsoNormal style='line-height:1.9pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#434443'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:79.0pt;text-indent:-26.95pt'><span
+style='font-size:10.0pt;font-family:Consolas;color:#434443'>//<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:10.0pt;font-family:Consolas;color:#434443'>0: 1</span></p>
+
+<p class=MsoNormal style='line-height:1.9pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#434443'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:79.0pt;text-indent:-26.95pt'><span
+style='font-size:10.0pt;font-family:Consolas;color:#434443'>//<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:10.0pt;font-family:Consolas;color:#434443'>1: &quot;hello,
+\&quot;world\&quot;&quot;</span></p>
+
+<p class=MsoNormal style='line-height:1.9pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#434443'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:79.0pt;text-indent:-26.95pt'><span
+style='font-size:10.0pt;font-family:Consolas;color:#434443'>//<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:10.0pt;font-family:Consolas;color:#434443'>2: 3.14</span></p>
+
+<p class=MsoNormal style='line-height:1.9pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#434443'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:79.0pt;text-indent:-26.95pt'><span
+style='font-size:10.0pt;font-family:Consolas;color:#434443'>//<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp; </span></span><span
+style='font-size:10.0pt;font-family:Consolas;color:#434443'>3: { id: 17 }</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#434443'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.1pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#434443'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:23.0pt;text-indent:-13.2pt'><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>Use </span><span
+style='font-size:9.5pt;font-family:Consolas;color:black'>JSON.stringify</span><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'> to
+serialize JS objects.</span></p>
+
+<p class=MsoNormal style='line-height:11.9pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-top:0in;margin-right:224.0pt;margin-bottom:
+0in;margin-left:31.0pt;margin-bottom:.0001pt;line-height:116%'><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#A71D5D'>const
+</span><span style='font-size:10.0pt;line-height:116%;font-family:Consolas;
+color:#333333'>array</span><span style='font-size:10.0pt;line-height:116%;
+font-family:Consolas;color:#A71D5D'> = </span><span style='font-size:10.0pt;
+line-height:116%;font-family:Consolas;color:#333333'>[</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#0086B3'>1</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#333333'>,</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#A71D5D'> </span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#183691'>'hello,
+&quot;world&quot;'</span><span style='font-size:10.0pt;line-height:116%;
+font-family:Consolas;color:#333333'>,</span><span style='font-size:10.0pt;
+line-height:116%;font-family:Consolas;color:#A71D5D'> </span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#0086B3'>3.14</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#333333'>,
+{ id:</span><span style='font-size:10.0pt;line-height:116%;font-family:Consolas;
+color:#A71D5D'> </span><span style='font-size:10.0pt;line-height:116%;
+font-family:Consolas;color:#0086B3'>17</span><span style='font-size:10.0pt;
+line-height:116%;font-family:Consolas;color:#A71D5D'> </span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#333333'>}];</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#A71D5D'> </span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#333333'>console.</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#3A2D4F'>log</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#333333'>(</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#0086B3'>JSON</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#333333'>.</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#3A2D4F'>stringify</span><span
+style='font-size:10.0pt;line-height:116%;font-family:Consolas;color:#333333'>(array));</span></p>
+
+<p class=MsoNormal style='line-height:.1pt'><span style='font-size:10.0pt'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:68.0pt;text-indent:-15.95pt'><span
+style='font-size:10.0pt;font-family:Consolas;color:#434443'>//<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:10.0pt;font-family:Consolas;color:#434443'>prints [1,
+&quot;hello, \&quot;world\&quot;&quot;, 3.14, {&quot;id&quot;:17}]</span></p>
+
+<p class=MsoNormal style='line-height:10.0pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#434443'>&nbsp;</span></p>
+
+<p class=MsoNormal style='line-height:12.1pt'><span style='font-size:10.0pt;
+font-family:Consolas;color:#434443'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:23.0pt;text-indent:-13.2pt'><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>Correctly
+identify the definition of &quot;serialize&quot;.</span></p>
+
+<p class=MsoNormal style='line-height:4.7pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:23.0pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>Converting your data into a
+format that can be sent to another computer.</span></p>
+
+<p class=MsoNormal style='line-height:4.7pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:23.0pt;text-indent:-13.2pt'><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:11.5pt;font-family:"Arial",sans-serif;color:#333333'>Correctly
+idenfity the definition of &quot;deserialize&quot;.</span></p>
+
+<p class=MsoNormal style='line-height:4.7pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>&nbsp;</span></p>
+
+<p class=MsoNormal style='margin-left:23.0pt'><span style='font-size:11.5pt;
+font-family:"Arial",sans-serif;color:#333333'>Getting a message from another
+computer and converting that message into usable data.</span></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+html * { font-family: 'Roboto', sans-serif; }
+
+a, a:hover { color: rgba(66, 139, 202, 1); }
+
+code {
+	background-color: rgba(127, 140, 141, 0.1);
+	color: inherit;
+	font-family: 'Roboto Mono', monospace;
+	white-space: nowrap;
+}
+
+.form-group { width: 100%; }
+
+#username, #repository, #get-stats-button {
+	margin-top: 10px;
+	width: 100%;
+}
+
+#stats-result {
+	margin-bottom: 40px;
+	margin-top: 50px;
+}
+
+.alert.output {
+	font-size: 18px;
+	text-align: center;
+}
+
+div.output { padding-bottom: 1em; }
+
+.total-downloads { margin-bottom: 25px; }
+
+.total-downloads h1 {
+	display: inline;
+	font-size: 18px;
+	margin-right: 10px;
+}
+
+.release {
+	background-color: rgba(127, 140, 141, 0.1);
+	border: solid 1px rgba(127, 140, 141, 0.4);
+	border-radius: 5px;
+	margin-bottom: 10px;
+	padding: 20px;
+}
+
+.release h3 .glyphicon {
+	color: rgba(66, 139, 202, 1);
+	cursor: default;
+}
+
+.release h3 .badge {
+	background-color: rgba(66, 139, 202, 1);
+	color: #fff;
+	cursor: default;
+}
+
+.release-hr { border-top-color: rgba(127, 140, 141, 0.4); }
+
+.latest-release {
+	background-color: rgba(92, 184, 92, 0.2);
+	border-color: rgba(92, 184, 92, 0.4);
+}
+
+.latest-release h3, .latest-release h3 .glyphicon, .latest-release h3 a { color: rgba(92, 184, 92, 1); }
+
+.latest-release h3 .badge { background-color: rgba(92, 184, 92, 1); }
+
+.latest-release .release-hr { border-color: rgba(92, 184, 92, 0.4); }
+
+.pre-release {
+	background-color: rgba(240, 173, 78, 0.05);
+	border-color: rgba(240, 173, 78, 0.4);
+}
+
+.pre-release h3, .pre-release h3 .glyphicon, .pre-release h3 a { color: rgba(240, 173, 78, 1); }
+
+.pre-release h3 .badge { background-color: rgba(240, 173, 78, 1); }
+
+.pre-release .release-hr { border-color: rgba(240, 173, 78, 0.4); }
+
+#description { text-align: center; }
+
+html {
+	min-height: 100%;
+	position: relative;
+}
+
+body { margin-bottom: 40px; }
+
+
+h3 > a { color: rgba(92, 184, 92, 1); }
